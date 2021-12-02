@@ -4,3 +4,13 @@
   height: 5em;
   width: auto;
 }
+
+.section {
+  height: 40vh;
+  width: 100vw;
+}
+
+.video {
+  width: 100vw;
+  height: auto; 
+}
