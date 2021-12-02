@@ -23,33 +23,35 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <!--add multiple stylesheets if needed, last one to load will have higher priority for any conflicts-->
+  <link rel="stylesheet" href="https://use.typekit.net/kbe1iwq.css">
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
 </head>
 
 <body>
-  <header id="header">
+  <header id="header" class="header row-1">
 
     <img id="header-img" src="https://user-images.githubusercontent.com/11747875/144372813-6781b64f-f9eb-4865-a4c4-0f1f2ae5127a.png" class="logo">
     <nav class="menu" id="nav-bar">
-      <ul>
-        <li><a href="#mission-section" class="nav-link">Mission</a></li>
-        <li><a href="#products-section" class="nav-link">Products</a></li>
-        <li><a href="#contacts-section" class="nav-link">Contact</a></li>
+      <ul class="menu-columns">
+        <li class="nav-link a"><a href="#mission-section">Mission</a></li>
+        <li class="nav-link b"><a href="#products-section">Products</a></li>
+        <li class="nav-link c"><a href="#contacts-section">Contact</a></li>
       </ul>
     </nav>
   </header>
   <div>
-    <div class="video-container">
+    <div class="video-container row-2">
       <video  autoplay loop class="video">
         <source src="https://user-images.githubusercontent.com/11747875/144365323-53521586-32ef-4590-8243-d1b958b715b8.mp4" type="video/mp4">;
       </video>
+      <div class="call-to-action"
     </div>
-    <div id="mission-section" class="section">
+    <div id="mission-section" class="section row-3">
     </div>
-    <div id="products-section" class="section">
+    <div id="products-section" class="section row-4">
     </div>
-    <div id="contacts-section" class="section">
+    <div id="contacts-section" class="section row-5">
     </div>
   </div>
   <!-- your content here... -->
