@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-a {
+a  {
   color: white;
   display: flex;
   font-family: battery-park,sans-serif;
@@ -14,9 +14,21 @@ a {
   width: 100%;
 }
 
+
 .a {
   grid-column: 1 / 1;
 
+}
+
+.animation {
+  -webkit-animation: vibrate 0.3s linear infinite both;
+  animation: vibrate 0.3s linear infinite both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animation {
+    animation: none;
+  }
 }
 
 .b {
@@ -67,6 +79,23 @@ body {
   transform: translateY(-2px);
 }
 
+.form {
+
+    height: 44vh;
+    background-color: white;
+    width: 55%;
+    height: 30vh;
+    margin: 0 auto 5em auto;
+    padding: 5em;
+    box-shadow: aquamarine;
+    box-shadow: 0px 2px 17px 0px rgb(0 0 0 / 66%);
+    -webkit-box-shadow: 0px 2px 17px 0px rgb(0 0 0 / 66%);
+    -moz-box-shadow: 0px 2px 17px 0px rgba(0,0,0,0.66);
+    border-radius: 37px;
+    -webkit-box-shadow: linear-gradient(144deg, rgba(2,0,36,1) 0%, rgba(4,0,95,1) 33%, rgba(123,0,253,1) 68%, rgba(2,0,36,1) 96%);
+    -webkit-box-shadow: 0px 2px 17px 0px rgb(255 0 0 / 50%);
+}
+
 h1 {
   font-size: 3em;
   margin: 3em auto 3em auto;
@@ -81,6 +110,23 @@ h1 {
   top: 10px;
   width: 100%;
   z-index: 20;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+label, input {
+  color: #262626;
+  font-family: battery-park,sans-serif;
+  font-size: 1.80em;
+  font-style: normal;
+  font-weight: 400;
+  margin: auto;
+  text-decoration: none;
+  width: min-content;
+  padding: 17px;
 }
 
 .logo {
@@ -123,6 +169,17 @@ h1 {
   text-align: center;
 }
 
+.nav-hover-javascript {
+  background-color: rgba(255,255,255,.1);
+  border: 2px solid;
+  border-top-color: white;
+  border-bottom-color: white;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  text-align: center;
+  color: rgba(255, 0, 0, 0.5);
+}
+
 .mission-photos {
   width: 100%;
   height: 120vh;
@@ -151,7 +208,7 @@ h1 {
   height: 150vh;
 }
 
-p {
+p,  {
   color: #4f4f4f;
   font-family: study, serif;
   font-weight: 100;
