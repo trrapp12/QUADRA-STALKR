@@ -26,11 +26,51 @@ a {
 body {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill0, min-max(200px, 1fr))
+  grid-template-columns: repeat(auto-fill0, min-max(200px, 1fr));
+  border: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .c {
   grid-column: 3 / 3;
+}
+
+.ca {
+  background-color: transparent;
+  border-color: white;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 3px;
+  color: white;
+  display: block;
+  height: 5vh;
+  left: 20%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60%;
+  z-index: 10;
+}
+
+.ca:hover, .ca:focus {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.center-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 0;
+  position: relative;
+  transform: translateY(-2px);
+}
+
+h1 {
+  font-size: 3em;
+  margin: 3em auto 3em auto;
+  width: 28%;
 }
 
 .header {
@@ -40,6 +80,7 @@ body {
   position: fixed;
   top: 10px;
   width: 100%;
+  z-index: 20;
 }
 
 .logo {
@@ -64,6 +105,7 @@ body {
 
 .nav-link {
   border: 2px solid transparent;
+  border-radius: 8px;
   height: 38%;
   margin: 0;
   padding: .25em;
@@ -79,6 +121,44 @@ body {
   border-left-color: transparent;
   border-right-color: transparent;
   text-align: center;
+}
+
+.mission-photos {
+  width: 100%;
+  height: 120vh;
+  overflow: hidden;
+  margin: 0;
+  object-fit: cover;
+}
+
+.mission-div:hover, .mission-div:focus {
+  width: 150%;
+}
+
+.mission-div {
+  transition-duration: .2s;
+  transition-property: width;
+  transition-timing-function: ease-in-out;
+  width: 100%;
+
+}
+
+.call-to-action > .section > .mission-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+}
+
+p {
+  color: #4f4f4f;
+  font-family: study, serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.5em;
+  margin: 0 auto 2em auto;
+  width: 50%;
 }
 
 .row-1 {
@@ -127,8 +207,11 @@ body {
 }
 
 .section {
-  height: 40vh;
-  width: 100vw;
+  height: 20vh;
+  width: 100%;
+  position: relative;
+  margin: 0 0 2em;
+  display: contents;
 }
 
 ul {
@@ -139,6 +222,6 @@ ul {
   width: 100vw;
   height: auto;
   z-index: -1;
-  top: -13px;
-  position: fixed;
+  top: -20px;
+  position: relative;
 }
