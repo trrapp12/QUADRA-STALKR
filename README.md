@@ -49,17 +49,17 @@ This is an example for a Product Landing Page for the QUADRAStalkr, an imaginary
 
 - [X] **User Story #9:** The #email input field should have placeholder text to let the user know what the field is for.
 
-- [X] User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+- [X] **User Story #10:** The #email input field uses HTML5 validation to confirm that the entered text is an email address.
 
-- [X] User Story #11: Within the form, there is a submit input with a corresponding id="submit".
+- [X] **User Story #11:** Within the form, there is a submit input with a corresponding id="submit".
 
-- [X] User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
+- [X] **User Story #12:** When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
 
-- [X] User Story #13: The navbar should always be at the top of the viewport.
+- [X] **User Story #13:** The navbar should always be at the top of the viewport.
 
-- [X] User Story #14: My product landing page should have at least one media query.
+- [X] **User Story #14:** My product landing page should have at least one media query.
 
-- [X] User Story #15: My product landing page should utilize CSS flexbox at least once.
+- [X] **User Story #15:** My product landing page should utilize CSS flexbox at least once.
 
 ### Project published at: 
 ---
