@@ -1,5 +1,5 @@
 (() => {
-  let navLinks = document.querySelectorAll('.nav-link-2')
+  let navLinks = document.querySelectorAll('.nav-link')
 
   document.addEventListener('scroll', function () {
     for (let i = 0; i < navLinks.length; i++) {
