@@ -26,7 +26,7 @@
 ### Description:
 ---
 
-This is an example for a Product Landing Page for the QUADRAStalkr, an imaginary drone from an imaginary company (that I have all the rights to emoji:wink ).  
+This is an example for a Product Landing Page for the QUADRAStalkr, an imaginary drone from an imaginary company (that I have all the rights to :smirk: :smirk: :smirk: ).  
 
 ### Project demonstrates the following:
 ---
@@ -64,7 +64,7 @@ This is an example for a Product Landing Page for the QUADRAStalkr, an imaginary
 ### Project published at: 
 ---
 
-[Sapphire](http://trrapp12.github.io/parallax-example/)
+[Sapphire](https://trrapp12.github.io/Product-Page/)
 
 ### More Information:
 ---
