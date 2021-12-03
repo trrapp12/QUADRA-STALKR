@@ -1,17 +1,17 @@
-html {
-  box-sizing: border-box;0
+* {
+  box-sizing: border-box;
 }
 
 a {
   color: white;
   display: flex;
   font-family: battery-park,sans-serif;
-  font-size: 2.5em;
+  font-size: 2.80em;
   font-style: normal;
   font-weight: 400;
   margin: auto;
   text-decoration: none;
-  width: 50%;
+  width: 100%;
 }
 
 .a {
@@ -37,10 +37,20 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, min-max(100px, 1fr))
   grid-template-rows: 1fr;
+  background-color: red;
+  position: fixed;
+  top: 10px;
+  width: 100%;
 }
 
+/* #header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+} */
+
 .logo {
-  height: 5em;
+  height: 9em;
   width: auto;
   margin: 2em;
 }
@@ -63,20 +73,22 @@ body {
   border: 2px solid transparent;
   height: 38%;
   margin: 0;
-  padding: 1em;
-  width: 80%;
+  padding: .25em;
+  text-align: center;
+  width: 100%;
 }
 
 .nav-link:hover {
+  background-color: rgba(255,255,255,.1);
   border: 2px solid;
   border-top-color: white;
   border-bottom-color: white;
   border-left-color: transparent;
   border-right-color: transparent;
+  text-align: center;
 }
 
 .row-1 {
-  grid-column: auto / span 8;
   grid-row: auto/ span 1;
 }
 

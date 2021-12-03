@@ -6,7 +6,7 @@
   <!--set initial-scale=1 for a 1:1 aspect raito-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>A Basic HTML5 Template</title>
+  <title>GOT YOUR SIX</title>
   <meta name="description" content="A simple HTML5 Template for new projects.">
   <meta name="author" content="SitePoint">
 
@@ -29,20 +29,22 @@
 </head>
 
 <body>
+  <div>
   <header id="header" class="header row-1">
 
     <img id="header-img" src="https://user-images.githubusercontent.com/11747875/144372813-6781b64f-f9eb-4865-a4c4-0f1f2ae5127a.png" class="logo">
     <nav class="menu" id="nav-bar">
       <ul class="menu-columns">
-        <li class="nav-link a"><a href="#mission-section">Mission</a></li>
-        <li class="nav-link b"><a href="#products-section">Products</a></li>
-        <li class="nav-link c"><a href="#contacts-section">Contact</a></li>
+        <a><li class="nav-link a" href="#mission-section">Mission</li></a>
+        <a><li class="nav-link b" href="#products-section">Products</li></a>
+        <a><li class="nav-link c" href="#contacts-section">Contact</li></a>
       </ul>
     </nav>
   </header>
+</div>
   <div>
     <div class="video-container row-2">
-      <video  autoplay loop class="video">
+      <video  autoplay loop class="video" id="video">
         <source src="https://user-images.githubusercontent.com/11747875/144365323-53521586-32ef-4590-8243-d1b958b715b8.mp4" type="video/mp4">;
       </video>
       <div class="call-to-action"
@@ -52,6 +54,11 @@
     <div id="products-section" class="section row-4">
     </div>
     <div id="contacts-section" class="section row-5">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <label for="email">Keep updated through email</label>
+        <input id="email" type="email" name="email" placeholder="address@email.com" pattern="([a-zA-Z0-9])+@+[a-zA-Z]+.+com"></input>
+        <input type="submit" id="submit"></input>
+      </form>
     </div>
   </div>
   <!-- your content here... -->
