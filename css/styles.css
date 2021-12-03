@@ -4,11 +4,13 @@
 
 a  {
   color: white;
-  display: flex;
+  display: block;
   font-family: battery-park,sans-serif;
   font-size: 2.80em;
   font-style: normal;
   font-weight: 400;
+  height: 100%;
+  min-height: 3.7em;
   margin: auto;
   text-decoration: none;
   width: 100%;
@@ -112,7 +114,7 @@ h1 {
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 
@@ -177,9 +179,11 @@ label, input {
   border-left-color: transparent;
   border-right-color: transparent;
   border-top-color: white;
-  color: rgb(139, 84, 84);
-  color: rgba(139, 84, 84, 0.5)
+  /* color: rgb(139, 84, 84);
+  color: rgba(139, 84, 84, 0.5) */
   text-align: center;
+  text-shadow: -1px 1px 4px rgba(0,0,0,0.64);
+  min-height: 1.5em;
 }
 
 .mission-photos {
