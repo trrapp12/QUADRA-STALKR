@@ -64,7 +64,7 @@ This is an example for a Product Landing Page for the QUADRAStalkr, an imaginary
 ### Project published at: 
 ---
 
-[Sapphire](https://trrapp12.github.io/Product-Page/)
+[QUADRAStalkr](https://trrapp12.github.io/Product-Page/)
 
 ### More Information:
 ---
