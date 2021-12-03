@@ -11,7 +11,7 @@
 
 ##### Trevor Rapp
 
-<br />![Sapphire Gif](https://user-images.githubusercontent.com/11747875/143719089-ed30db30-f05c-4065-99e3-475c9e0620e1.gif)
+<br />![QUADRAStalkr](https://user-images.githubusercontent.com/11747875/144578671-1739a4ec-23e8-45e1-80a9-7d7fb39856d0.gif)
 
 
 
