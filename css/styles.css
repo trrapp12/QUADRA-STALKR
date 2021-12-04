@@ -10,7 +10,7 @@ a  {
   font-style: normal;
   font-weight: 400;
   height: 100%;
-  min-height: 3.7em;
+  min-height: 1.6em;
   margin: auto;
   text-decoration: none;
   width: 100%;
@@ -160,7 +160,7 @@ label, input {
   width: 100%;
 }
 
-.nav-link-2:hover {
+.nav-link-2-hover {
   background-color: rgb(255,255,255);
   background-color: rgba(255,255,255,.1);
   border: 2px solid;
