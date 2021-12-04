@@ -14,7 +14,7 @@
 // function found in javascripttutorial.net
 window.addEventListener('scroll', function() {
   if (isVisible(missionSection)) {
-    alert("is visible")
+    // alert("is visible")
   }
 });
 })();

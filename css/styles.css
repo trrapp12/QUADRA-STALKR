@@ -184,6 +184,7 @@ label, input {
   text-align: center;
   text-shadow: -1px 1px 4px rgba(0,0,0,0.64);
   min-height: 1.5em;
+  transition-timing-function: ease-in-out;
 }
 
 .mission-photos {

@@ -10,7 +10,7 @@
         navLinks[i].classList.remove('nav-hover-javascript')
       }
     }
-    setTimeout(removeClass, 2000);
+    setTimeout(removeClass, 8000);
   })
 
 })();
