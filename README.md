@@ -9,7 +9,7 @@
 
 <br>
 
-##### Trevor Rapp
+
 
 <br />![QUADRAStalkr](https://user-images.githubusercontent.com/11747875/144578671-1739a4ec-23e8-45e1-80a9-7d7fb39856d0.gif)
 
