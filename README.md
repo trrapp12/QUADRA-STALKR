@@ -11,12 +11,12 @@
 
 
 
-<br />![QUADRAStalkr](https://user-images.githubusercontent.com/11747875/144578671-1739a4ec-23e8-45e1-80a9-7d7fb39856d0.gif)
-
-
+<br />
 
 https://user-images.githubusercontent.com/11747875/149453352-a22944fb-ed0a-4216-9498-9418c234cb8f.mp4
 
+<br>
+<br>
 
 
 ---
@@ -25,7 +25,7 @@ https://user-images.githubusercontent.com/11747875/149453352-a22944fb-ed0a-4216-
 <img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
 <img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
 <br>
-
+<br>
 ---
 ### Description:
 
