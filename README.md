@@ -24,12 +24,17 @@
 
 ---
 ### Description:
----
+
 
 This is an example for a Product Landing Page for the QUADRAStalkr, an imaginary drone from an imaginary company (that I have all the rights to :smirk: :smirk: :smirk: ).  Includes use of video media, navigation elements, smart use of CSS animation to create an interactive design, and a form element that submits to a static page.  
 
-### Project demonstrates the following:
+<br>
+<br>
+
 ---
+
+### Project demonstrates the following:
+
 
 - [X] **User Story #1:** My product landing page should have a header element with a corresponding id="header".
 
@@ -61,14 +66,23 @@ This is an example for a Product Landing Page for the QUADRAStalkr, an imaginary
 
 - [X] **User Story #15:** My product landing page should utilize CSS flexbox at least once.
 
-### Project published at: 
+<br>
+<br>
+
 ---
+
+### Project published at: 
+
 
 [QUADRAStalkr](https://trrapp12.github.io/Product-Page/)
 
-### More Information:
+<br>
+<br>
+
 ---
 
+### More Information:
+
+
 \**For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037) or return to my [Github](https://github.com/trrapp12)*
-# test-private
 
