@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 @font-face {
@@ -125,7 +126,7 @@ h1 {
 }
 
 html {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 label, input {
@@ -141,9 +142,9 @@ label, input {
 }
 
 .logo {
-  height: 25%;
+  height: auto;
   margin-left: 1.5em;
-  width: auto;
+  width: 25%;
 }
 
 .menu {
@@ -168,15 +169,19 @@ label, input {
   width: 100%;
 }
 
-.mission-div:hover, .mission-div:focus {
-  width: 150%;
-}
-
 .mission-div {
   transition-duration: .2s;
   transition-property: width;
   transition-timing-function: ease-in-out;
   width: 100%;
+}
+
+.mission-div:hover {
+  width: 150%;
+}
+
+.mission-div:focus {
+  width: 150%;
 }
 
 .nav-link-2 {
