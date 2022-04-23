@@ -2,11 +2,16 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Ultima;
+  src: url(../assets/ultima-modern-futuristi-font/mbf-ultima-v4/mbf_ultima.woff);
+}
+
 a  {
   color: white;
   display: block;
-  font-family: battery-park,sans-serif;
-  font-size: 2.80em;
+  font-family: Ultima, sans-serif;
+  font-size: 2.80rem;
   font-style: normal;
   font-weight: 400;
   height: 100%;
@@ -16,7 +21,6 @@ a  {
   width: 100%;
 }
 
-
 .a {
   grid-column: 1 / 1;
 
@@ -25,12 +29,6 @@ a  {
 .animation {
   -webkit-animation: vibrate 0.3s linear infinite both;
   animation: vibrate 0.3s linear infinite both;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .animation {
-    animation: none;
-  }
 }
 
 .b {
@@ -73,6 +71,15 @@ body {
   background-color: rgba(255, 0, 0, 0.5);
 }
 
+.call-to-action > .section > .mission-section {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 150vh;
+  justify-content: center;
+}
+
+
 .center-div {
   display: flex;
   flex-direction: column;
@@ -98,7 +105,8 @@ body {
 }
 
 h1 {
-  font-size: 3em;
+  font-family: Ultima;
+  font-size: 3rem;
   margin: 3em auto 3em auto;
   width: 28%;
 }
@@ -117,11 +125,10 @@ html {
   /* scroll-behavior: smooth; */
 }
 
-
 label, input {
   color: #262626;
-  font-family: battery-park,sans-serif;
-  font-size: 1.80em;
+  font-family: Ultima, sans-serif;
+  font-size: 1.80rem;
   font-style: normal;
   font-weight: 400;
   margin: auto;
@@ -131,8 +138,8 @@ label, input {
 }
 
 .logo {
-  height: 9em;
-  margin: 2em;
+  height: 25%;
+  margin-left: 1.5em;
   width: auto;
 }
 
@@ -148,6 +155,25 @@ label, input {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   margin: 0;
+}
+
+.mission-photos {
+  height: 120vh;
+  margin: 0;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+}
+
+.mission-div:hover, .mission-div:focus {
+  width: 150%;
+}
+
+.mission-div {
+  transition-duration: .2s;
+  transition-property: width;
+  transition-timing-function: ease-in-out;
+  width: 100%;
 }
 
 .nav-link-2 {
@@ -187,38 +213,11 @@ label, input {
   transition-timing-function: ease-in-out;
 }
 
-.mission-photos {
-  height: 120vh;
-  margin: 0;
-  object-fit: cover;
-  overflow: hidden;
-  width: 100%;
-}
-
-.mission-div:hover, .mission-div:focus {
-  width: 150%;
-}
-
-.mission-div {
-  transition-duration: .2s;
-  transition-property: width;
-  transition-timing-function: ease-in-out;
-  width: 100%;
-
-}
-
-.call-to-action > .section > .mission-section {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  height: 150vh;
-  justify-content: center;
-}
 
 p {
   color: #4f4f4f;
   font-family: study, serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 100;
   margin: 0 auto 2em auto;
@@ -288,4 +287,10 @@ ul {
   top: -20px;
   width: 100vw;
   z-index: -1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animation {
+    animation: none;
+  }
 }
