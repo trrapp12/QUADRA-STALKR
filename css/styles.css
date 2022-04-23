@@ -79,6 +79,11 @@ body {
   justify-content: center;
 }
 
+.call-to-action--title {
+  margin: 3em auto 3em auto; 
+  width: 50%; 
+  text-align: center;
+}
 
 .center-div {
   display: flex;
@@ -106,9 +111,7 @@ body {
 
 h1 {
   font-family: Ultima;
-  font-size: 3rem;
-  margin: 3em auto 3em auto;
-  width: 28%;
+  font-size: 6rem;
 }
 
 .header {
@@ -205,8 +208,6 @@ label, input {
   border-left-color: transparent;
   border-right-color: transparent;
   border-top-color: white;
-  /* color: rgb(139, 84, 84);
-  color: rgba(139, 84, 84, 0.5) */
   text-align: center;
   text-shadow: -1px 1px 4px rgba(0,0,0,0.64);
   min-height: 1.5em;
