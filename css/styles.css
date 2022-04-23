@@ -8,17 +8,8 @@
 }
 
 a  {
-  color: white;
-  display: block;
-  font-family: Ultima, sans-serif;
-  font-size: 2.80rem;
-  font-style: normal;
-  font-weight: 400;
-  height: 100%;
-  min-height: 1.6em;
-  margin: auto;
   text-decoration: none;
-  width: 100%;
+  color: slategray;
 }
 
 .a {
@@ -95,18 +86,17 @@ body {
 }
 
 .form {
-    background-color: white;
-    border-radius: 37px;
-    box-shadow: aquamarine;
-    box-shadow: 0px 2px 17px 0px rgb(0 0 0 / 66%);
-    -webkit-box-shadow: 0px 2px 17px 0px rgb(0 0 0 / 66%);
-    -moz-box-shadow: 0px 2px 17px 0px rgba(0,0,0,0.66);
-    -webkit-box-shadow: linear-gradient(144deg, rgba(2,0,36,1) 0%, rgba(4,0,95,1) 33%, rgba(123,0,253,1) 68%, rgba(2,0,36,1) 96%);
-    -webkit-box-shadow: 0px 2px 17px 0px rgb(139 84 84 / 50%);
-    height: 30vh;
-    margin: 0 auto 5em auto;
-    padding: 5em;
-    width: 55%;
+  background-color: white;
+  box-shadow: aquamarine;
+  box-shadow: 0px 2px 17px 0px rgb(0 0 0 / 66%);
+  -webkit-box-shadow: 0px 2px 17px 0px rgb(0 0 0 / 66%);
+  -moz-box-shadow: 0px 2px 17px 0px rgba(0,0,0,0.66);
+  -webkit-box-shadow: linear-gradient(144deg, rgba(2,0,36,1) 0%, rgba(4,0,95,1) 33%, rgba(123,0,253,1) 68%, rgba(2,0,36,1) 96%);
+  -webkit-box-shadow: 0px 2px 17px 0px rgb(139 84 84 / 50%);
+  height: 43vh;
+  margin: 0 auto 5em auto;
+  padding: 5em;
+  width: 55%;
 }
 
 h1 {
@@ -183,10 +173,35 @@ label, input {
   width: 150%;
 }
 
+.nav-link {
+  color: white; 
+  font-family: Ultima, sans-serif;
+  font-size: 2.8rem;
+  margin: 25px;
+  width: 100%;
+}
+
 .nav-link-2 {
   border: 2px solid transparent;
   border-radius: 8px;
-  height: 38%;
+  height: 7vh;
+  margin: 0;
+  padding: .25em;
+  text-align: center;
+  width: 100%;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
+.nav-link-2:hover {
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255,.1);
+  border: 2px solid;
+  border-bottom-color: white;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: white;
+  height: 7vh;
   margin: 0;
   padding: .25em;
   text-align: center;
@@ -201,7 +216,11 @@ label, input {
   border-left-color: transparent;
   border-right-color: transparent;
   border-top-color: white;
+  height: 7vh;
+  margin: 0;
+  padding: .25em;
   text-align: center;
+  width: 100%;
 }
 
 .nav-hover-javascript {
@@ -212,9 +231,13 @@ label, input {
   border-left-color: transparent;
   border-right-color: transparent;
   border-top-color: white;
-  text-align: center;
   text-shadow: -1px 1px 4px rgba(0,0,0,0.64);
-  min-height: 1.5em;
+  height: 7vh;
+  margin: 0;
+  padding: .25em;
+  text-align: center;
+  width: 100%;
+  transition-duration: 500ms;
   transition-timing-function: ease-in-out;
 }
 
