@@ -1,3 +1,22 @@
+:root {
+  /* first test color palette */
+  --brown: #854D04;
+  --green: #30D158;
+  --light-brown: #D0821C; 
+  --purple: #5C06D1;
+  --dark-purple: #3e0b85;
+  /* second color palette */
+  --bright-blue: #169AFF; 
+  --less-bright-blue: #148CE8; 
+  --med-bright-blue: #148AE5; 
+  --dark-blue: #0B4D7F;
+  --dark-dark-blue: #062740;
+}
+
+
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -33,6 +52,14 @@ body {
   grid-template-columns: repeat(auto-fill0, min-max(200px, 1fr));
   margin: 0;
   width: 100%;
+}
+
+.brown {
+  color: var(--brown);
+}
+
+.bright-blue {
+  color: var(--bright-blue)
 }
 
 .c {
@@ -71,10 +98,46 @@ body {
 }
 
 .call-to-action--title {
-  margin: 3em auto 3em auto; 
-  width: 50%; 
-  text-align: center;
+  transition: color 2s ease-in-out, box-shadow 2s ease-in-out;
 }
+
+.mission-section-container {
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  width: 50%; 
+  text-align: left;
+  color: var(--dark-dark-blue);
+  box-shadow: inset 0px 0px 0px 0px var(--dark-dark-blue);
+  transition: color 2s ease-in-out, box-shadow 2s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: translate3D(0, 0, 0);
+}
+
+.products-section-container {
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  margin-left: 50%;
+  width: 50%;
+  text-align: left;
+  color: var(--dark-dark-blue);
+  box-shadow: inset 0px 0px 0px 0px var(--dark-dark-blue);
+  transition: color 2s ease-in-out, box-shadow 2s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: translate3D(0, 0, 0);
+}
+
+.mission-section-container-hover {
+  box-shadow: inset 3000px 0px 0px 0px var(--dark-dark-blue);
+  color: white;
+}
+
+.products-section-container-hover {
+  box-shadow: inset 0px 0px 0px 3000px var(--dark-dark-blue);
+  color: white;
+}
+
 
 .center-div {
   display: flex;
@@ -83,6 +146,14 @@ body {
   position: relative;
   transform: translateY(-2px);
   z-index: 0;
+}
+
+.dark-blue{
+  color: var(--dark-blue);
+}
+
+.dark-dark-blue {
+  color: var(--dark-dark-blue)
 }
 
 .form {
@@ -134,6 +205,14 @@ label, input {
   height: auto;
   margin-left: 1.5em;
   width: 25%;
+}
+
+.less-bright-blue {
+  color: var(--less-bright-blue);
+}
+
+.med-bright-blue {
+  color: var(--med-bright-blue);
 }
 
 .menu {
@@ -248,8 +327,8 @@ p {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 100;
-  margin: 0 auto 2em auto;
-  width: 50%;
+  margin: 4em auto auto auto;
+  max-width: 597px;
 }
 
 .row-1 {
