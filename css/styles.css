@@ -13,10 +13,6 @@
   --dark-dark-blue: #062740;
 }
 
-
-
-
-
 * {
   box-sizing: border-box;
 }
@@ -52,6 +48,10 @@ body {
   grid-template-columns: repeat(auto-fill0, min-max(200px, 1fr));
   margin: 0;
   width: 100%;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .brown {
@@ -138,7 +138,6 @@ body {
   box-shadow: inset 0px 0px 0px 3000px var(--dark-dark-blue);
   color: white;
 }
-
 
 .center-div {
   display: flex;
