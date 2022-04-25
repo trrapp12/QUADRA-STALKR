@@ -89,16 +89,17 @@ body {
   background-color: rgba(255, 0, 0, 0.5);
 }
 
-.call-to-action > .section > .mission-section {
+.section > .mission-section {
   align-items: center;
   display: flex;
   flex-direction: row;
-  height: 150vh;
+  height: min-content;
   justify-content: center;
 }
 
 .call-to-action--title {
   transition: color 2s ease-in-out, box-shadow 2s ease-in-out;
+  margin: 20vh 0 0 0;
 }
 
 .mission-section-container {
@@ -114,7 +115,7 @@ body {
   -webkit-transform: translate3D(0, 0, 0);
 }
 
-.products-section-container {
+.catalog-section-container {
   margin: 0 -.25rem;
   padding: 0 .25rem;
   margin-left: 50%;
