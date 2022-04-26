@@ -1,3 +1,5 @@
+/* CSS for variables and normalization */
+
 :root {
   /* first test color palette */
   --brown: #854D04;
@@ -10,6 +12,7 @@
   --less-bright-blue: #148CE8; 
   --med-bright-blue: #148AE5; 
   --dark-blue: #0B4D7F;
+  --dark-blue-transparency: rgba(11, 77, 127, .65)
   --dark-dark-blue: #062740;
 }
 
@@ -23,6 +26,8 @@
   src: url(../assets/ultima-modern-futuristi-font/mbf-ultima-v4/mbf_ultima.woff);
 }
 
+/* CSS based on element */
+
 a  {
   text-decoration: none;
   color: slategray;
@@ -32,6 +37,39 @@ h1 {
   font-family: Ultima;
   font-size: 5rem;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+label, input {
+  color: #262626;
+  font-family: Ultima, sans-serif;
+  font-size: 1.80rem;
+  font-style: normal;
+  font-weight: 400;
+  margin: auto;
+  padding: 17px;
+  text-decoration: none;
+  width: min-content;
+}
+
+p {
+  color: #4f4f4f;
+  font-family: study, serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 100;
+  margin: 4em auto auto auto;
+  max-width: 597px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+/* CSS based on classes */
 
 .a {
   grid-column: 1 / 1;
@@ -174,8 +212,6 @@ body {
   width: 55%;
 }
 
-
-
 .header {
   display: grid;
   grid-template-columns: repeat(auto-fill, min-max(100px, 1fr))
@@ -184,22 +220,6 @@ body {
   top: 10px;
   width: 100%;
   z-index: 20;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-label, input {
-  color: #262626;
-  font-family: Ultima, sans-serif;
-  font-size: 1.80rem;
-  font-style: normal;
-  font-weight: 400;
-  margin: auto;
-  padding: 17px;
-  text-decoration: none;
-  width: min-content;
 }
 
 .logo {
@@ -274,44 +294,13 @@ label, input {
 }
 
 .nav-link-2:hover {
-  background-color: rgb(255,255,255);
   background-color: rgba(255,255,255,.1);
   border: 2px solid;
   border-bottom-color: white;
   border-left-color: transparent;
   border-right-color: transparent;
   border-top-color: white;
-  height: 7vh;
-  margin: 0;
-  padding: .25em;
-  text-align: center;
-  width: 100%;
-}
-
-.nav-link-2-hover {
-  background-color: rgb(255,255,255);
-  background-color: rgba(255,255,255,.1);
-  border: 2px solid;
-  border-bottom-color: white;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-top-color: white;
-  height: 7vh;
-  margin: 0;
-  padding: .25em;
-  text-align: center;
-  width: 100%;
-}
-
-.nav-hover-javascript {
-  background-color: rgb(255, 255, 255);
-  background-color: rgba(255,255,255,.1);
-  border: 2px solid;
-  border-bottom-color: white;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-top-color: white;
-  text-shadow: -1px 1px 4px rgba(0,0,0,0.64);
+  text-shadow: -1px 1px 4px rgba(11, 77, 127, .65);
   height: 7vh;
   margin: 0;
   padding: .25em;
@@ -321,15 +310,25 @@ label, input {
   transition-timing-function: ease-in-out;
 }
 
+.nav-hover-javascript {
+  background-color: rgba(255,255,255,.1);
+  border: 2px solid;
+  border-bottom-color: white;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: white;
+  text-shadow: -1px 1px 4px rgba(11, 77, 127, .65);
+  height: 7vh;
+  margin: 0;
+  padding: .25em;
+  text-align: center;
+  width: 100%;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
 
-p {
-  color: #4f4f4f;
-  font-family: study, serif;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 100;
-  margin: 4em auto auto auto;
-  max-width: 597px;
+.margin-bottom {
+  margin-bottom: 4em;
 }
 
 .section {
@@ -340,10 +339,6 @@ p {
   width: 100%;
 }
 
-ul {
-  list-style-type: none;
-}
-
 .video {
   height: auto;
   position: relative;
@@ -351,6 +346,8 @@ ul {
   width: 99vw;
   z-index: -1;
 }
+
+/* CSS based on media queries */
 
 @media (prefers-reduced-motion: reduce) {
   .animation {
