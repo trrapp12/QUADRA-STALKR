@@ -28,6 +28,11 @@ a  {
   color: slategray;
 }
 
+h1 {
+  font-family: Ultima;
+  font-size: 5rem;
+}
+
 .a {
   grid-column: 1 / 1;
 
@@ -44,9 +49,6 @@ a  {
 
 body {
   border: 0;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill0, min-max(200px, 1fr));
   margin: 0;
   width: 100%;
 }
@@ -101,6 +103,7 @@ body {
 .call-to-action--title {
   transition: color 2s ease-in-out, box-shadow 2s ease-in-out;
   margin: 20vh 0 0 0;
+  padding: 1rem 2rem 1rem 4rem;
 }
 
 .mission-section-container {
@@ -171,10 +174,7 @@ body {
   width: 55%;
 }
 
-h1 {
-  font-family: Ultima;
-  font-size: 6rem;
-}
+
 
 .header {
   display: grid;
@@ -330,51 +330,6 @@ p {
   font-weight: 100;
   margin: 4em auto auto auto;
   max-width: 597px;
-}
-
-.row-1 {
-  grid-row: auto / span 1;
-}
-
-.row-2 {
-  grid-column: auto / span 8;
-  grid-row: auto / span 3;
-}
-
-
-.row-3 {
-  grid-column: auto / span 8;
-  grid-row: auto/ span 3;
-}
-
-
-.row-4 {
-  grid-column: auto / span 8;
-  grid-row: auto/ span 3;
-}
-
-
-.row-5 {
-  grid-column: auto / span 8;
-  grid-row: auto/ span 3;
-}
-
-
-.row-6 {
-  grid-column: auto / span 8;
-  grid-row: auto/ span 3;
-}
-
-
-.row-7 {
-  grid-column: auto / span 8;
-  grid-row: auto/ span 3;
-}
-
-
-.row-8 {
-  grid-column: auto / span 8;
-  grid-row: auto/ span 3;
 }
 
 .section {
