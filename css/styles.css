@@ -212,6 +212,29 @@ body {
   width: 55%;
 }
 
+.four-images {
+  width: auto;
+  height: 50vh;
+  margin: 0em 0em;
+  object-fit: cover;
+  transition: all 500ms ease-out;
+}
+
+.four-images-container {
+  overflow: hidden;
+  max-width: auto;
+  max-height: 50vh;
+}
+
+.four-images:hover {
+  width: auto;
+  height: 51vh;
+  margin: 0em 0em;
+  object-fit: cover;
+  transform: scale(1.0);
+  transition: all 500ms ease-out;
+}
+
 .header {
   display: grid;
   grid-template-columns: repeat(auto-fill, min-max(100px, 1fr))
@@ -274,10 +297,10 @@ body {
 }
 
 .nav-link {
-  color: white; 
+  color: white;
   font-family: Ultima, sans-serif;
   font-size: 2.8rem;
-  margin: 25px;
+  margin: 4em 25px;
   width: 100%;
 }
 
@@ -329,6 +352,22 @@ body {
 
 .margin-bottom {
   margin-bottom: 4em;
+}
+
+.product-container {
+  display: flex; 
+  flex-direction: column;
+  margin: 4em 0em;
+}
+
+.product-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+  justify-content: center;
 }
 
 .section {
