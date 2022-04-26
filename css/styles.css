@@ -347,6 +347,10 @@ body {
   z-index: -1;
 }
 
+#email {
+  margin: 4em 0em;
+}
+
 /* CSS based on media queries */
 
 @media (prefers-reduced-motion: reduce) {
