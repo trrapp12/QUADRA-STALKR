@@ -226,14 +226,14 @@ body {
   overflow: hidden;
   max-height: 50vh;
   display: inline-block;
-  max-width: 16.8vw;
+  max-width: 15.8vw;
 }
 
 .four-images-container-two {
   overflow: hidden;
   max-height: 50vh;
   display: inline-block;
-  max-width: 18vw;
+  max-width: 345px;
 }
 
 .four-images:hover {
