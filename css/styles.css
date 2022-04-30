@@ -2,20 +2,37 @@
 
 :root {
   /* first test color palette */
-  --brown: #854D04;
-  --green: #30D158;
-  --light-brown: #D0821C; 
-  --purple: #5C06D1;
-  --dark-purple: #3e0b85;
-  /* second color palette */
-  --bright-blue: #169AFF; 
+  --intense-purple: #2228B5;
+  --dark-purple: #404282;
   --less-bright-blue: #148CE8; 
-  --med-bright-blue: #148AE5; 
-  --dark-blue: #0B4D7F;
-  --dark-blue-transparency: rgba(11, 77, 127, .65)
-  --dark-dark-blue: #062740;
-  /* third */
-  --muted-gray: #A6B4B8;
+  --light-brown: #EB9850;
+  --dark-brown: #B55122;
+
+  /* more aggressive theme */
+  --maximum-red: #D62828;
+  --prussian-blue: #003049;
+  --orange: #F77F00;  
+
+  --shadow-color: 201deg 100% 7%;
+  --shadow-elevation-low:
+    0px 0.6px 0.6px hsl(var(--shadow-color) / 0.32),
+    0px 0.8px 0.7px -1.9px hsl(var(--shadow-color) / 0.25),
+    0px 1.9px 1.8px -3.8px hsl(var(--shadow-color) / 0.17);
+  --shadow-elevation-medium:
+    0px 0.6px 0.6px hsl(var(--shadow-color) / 0.34),
+    0px 1.3px 1.2px -1.3px hsl(var(--shadow-color) / 0.28),
+    0px 3.6px 3.3px -2.6px hsl(var(--shadow-color) / 0.22),
+    0px 9.7px 8.9px -3.8px hsl(var(--shadow-color) / 0.16);
+  --shadow-elevation-high:
+    0px 0.6px 0.6px hsl(var(--shadow-color) / 0.31),
+    0px 1.5px 1.4px -0.5px hsl(var(--shadow-color) / 0.29),
+    0px 2.7px 2.5px -1.1px hsl(var(--shadow-color) / 0.26),
+    0px 5px 4.6px -1.6px hsl(var(--shadow-color) / 0.23),
+    0px 8.9px 8.2px -2.2px hsl(var(--shadow-color) / 0.2),
+    0px 15.2px 14px -2.7px hsl(var(--shadow-color) / 0.18),
+    -0.1px 24.4px 22.5px -3.3px hsl(var(--shadow-color) / 0.15),
+    -0.1px 37.1px 34.2px -3.8px hsl(var(--shadow-color) / 0.12);
+
 }
 
 * {
@@ -32,7 +49,7 @@
 
 a  {
   text-decoration: none;
-  color: slategray;
+  color: var(--prussian-blue);
 }
 
 h1 {
@@ -45,7 +62,7 @@ html {
 }
 
 label, input {
-  color: var(--muted-gray);
+  color: var(--orange);
   font-family: Ultima, sans-serif;
   font-size: 1.80rem;
   font-style: normal;
@@ -54,16 +71,44 @@ label, input {
   padding: 17px;
   text-decoration: none;
   width: min-content;
+  transition: all 250ms ease-in-out;
+  border-radius: ;
+}
+
+#submit:hover {
+  color: white; 
+  background-color: var(--orange);
+  transition: all 250ms ease-in-out;
+  font-size: 1.9rem;
+  border: 3px solid white;
+}
+
+#submit {
+  border-radius: 5px;
+  border: 3px solid var(--orange)
+  padding: 1rem 1.75rem;
+  margin: auto auto auto 2rem;
+  background-color: var(--orange);
+  font-weight: bold;
+  font-size: 1.80rem;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 1.7px 1.3px 2.2px rgb(0 0 0 / 2%), 4.2px 3.1px 5.3px rgb(0 0 0 / 3%), 7.9px 5.8px 10px rgb(0 0 0 / 4%), 14.1px 10.3px 17.9px rgb(0 0 0 / 4%), 26.3px 19.2px 33.4px rgb(0 0 0 / 5%), 63px 46px 80px rgb(0 0 0 / 7%);
 }
 
 p {
-  color: #4f4f4f;
+  color: var(--prussian-blue);
   font-family: study, serif;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 100;
   margin: 4em auto auto auto;
   max-width: 597px;
+}
+
+::placeholder {
+  color: rgba(247, 127, 0, .3)
+
 }
 
 ul {
@@ -101,8 +146,8 @@ body {
   color: var(--brown);
 }
 
-.bright-blue {
-  color: var(--bright-blue)
+.red {
+  color: var(--maximum-red)
 }
 
 .c {
@@ -143,7 +188,7 @@ body {
 .call-to-action--title {
   transition: color 2s ease-in-out, box-shadow 2s ease-in-out;
   margin: 20vh 0 0 0;
-  padding: 1rem 2rem 1rem 4rem;
+  padding: 2rem 3rem 2rem 7rem;
 }
 
 .mission-section-container {
@@ -151,8 +196,8 @@ body {
   padding: 0 .25rem;
   width: 50%; 
   text-align: left;
-  color: var(--dark-dark-blue);
-  box-shadow: inset 0px 0px 0px 0px var(--dark-dark-blue);
+  color: var(--prussian-blue);
+  box-shadow: inset 0px 0px 0px 0px var(--prussian-blue);
   transition: color 2s ease-in-out, box-shadow 2s ease-in-out;
   -webkit-backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
@@ -165,8 +210,8 @@ body {
   margin-left: 50%;
   width: 50%;
   text-align: left;
-  color: var(--dark-dark-blue);
-  box-shadow: inset 0px 0px 0px 0px var(--dark-dark-blue);
+  color: var(--prussian-blue);
+  box-shadow: inset 0px 0px 0px 0px var(--prussian-blue);
   transition: color 2s ease-in-out, box-shadow 2s ease-in-out;
   -webkit-backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
@@ -174,13 +219,13 @@ body {
 }
 
 .mission-section-container-hover {
-  box-shadow: inset 3000px 0px 0px 0px var(--dark-dark-blue);
-  color: white;
+  box-shadow: inset 3000px 0px 0px 0px var(--prussian-blue);
+  color: var(--orange);
 }
 
 .products-section-container-hover {
-  box-shadow: inset 0px 0px 0px 3000px var(--dark-dark-blue);
-  color: white;
+  box-shadow: inset 0px 0px 0px 3000px var(--prussian-blue);
+  color: var(--orange);
 }
 
 .center-div {
@@ -197,17 +242,12 @@ body {
 }
 
 .dark-dark-blue {
-  color: var(--dark-dark-blue)
+  color: var(--prussian-blue)
 }
 
 .form {
-  background-color: white;
-  box-shadow: aquamarine;
-  box-shadow: 0px 2px 17px 0px rgb(0 0 0 / 66%);
-  -webkit-box-shadow: 0px 2px 17px 0px rgb(0 0 0 / 66%);
-  -moz-box-shadow: 0px 2px 17px 0px rgba(0,0,0,0.66);
-  -webkit-box-shadow: linear-gradient(144deg, rgba(2,0,36,1) 0%, rgba(4,0,95,1) 33%, rgba(123,0,253,1) 68%, rgba(2,0,36,1) 96%);
-  -webkit-box-shadow: 0px 2px 17px 0px rgb(139 84 84 / 50%);
+  background-color: var(--prussian-blue);
+  box-shadow: var(--shadow-elevation-high);
   height: 43vh;
   margin: 0 auto 5em auto;
   padding: 5em;
@@ -263,8 +303,8 @@ body {
   width: 25%;
 }
 
-.less-bright-blue {
-  color: var(--less-bright-blue);
+.orange {
+  color: var(--orange);
 }
 
 .med-bright-blue {
@@ -309,7 +349,7 @@ body {
 }
 
 .nav-link {
-  color: white;
+  color: var(--orange);
   font-family: Ultima, sans-serif;
   font-size: 2.8rem;
   margin: 4em 25px;
@@ -331,10 +371,10 @@ body {
 .nav-link-2:hover {
   background-color: rgba(255,255,255,.1);
   border: 2px solid;
-  border-bottom-color: white;
+  border-bottom-color: var(--maximum-red);
   border-left-color: transparent;
   border-right-color: transparent;
-  border-top-color: white;
+  border-top-color: var(--maximum-red);
   text-shadow: -1px 1px 4px rgba(11, 77, 127, .65);
   height: 7vh;
   margin: 0;
@@ -348,11 +388,11 @@ body {
 .nav-hover-javascript {
   background-color: rgba(255,255,255,.1);
   border: 2px solid;
-  border-bottom-color: white;
+  border-bottom-color: var(--maximum-red);
   border-left-color: transparent;
   border-right-color: transparent;
-  border-top-color: white;
-  text-shadow: -1px 1px 4px rgba(11, 77, 127, .65);
+  border-top-color: var(--maximum-red);
+  text-shadow: -1px 1px 4px rgba(0, 48, 73, .65);
   height: 7vh;
   margin: 0;
   padding: .25em;
