@@ -38,6 +38,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  
 }
 
 @font-face {
@@ -52,6 +53,10 @@ a  {
   color: var(--prussian-blue);
 }
 
+body {
+  cursor: url(qUADRA_cursor.png), auto;
+}
+
 h1 {
   font-family: Ultima;
   font-size: 5rem;
@@ -59,6 +64,7 @@ h1 {
 
 html {
   scroll-behavior: smooth;
+  
 }
 
 label {
@@ -340,9 +346,11 @@ body {
 }
 
 .logo {
+  border: 3px solid var(--prussian-blue);
   height: auto;
   margin-left: 1.5em;
   width: 25%;
+  margin: 1.1rem 0 0 2rem;
 }
 
 .orange {
