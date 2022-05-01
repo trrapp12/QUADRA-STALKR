@@ -61,18 +61,32 @@ html {
   scroll-behavior: smooth;
 }
 
-label, input {
+label {
   color: var(--orange);
-  font-family: Ultima, sans-serif;
+  font-family: study, sans-serif;
   font-size: 1.80rem;
   font-style: normal;
   font-weight: 400;
-  margin: auto;
   padding: 17px;
   text-decoration: none;
-  width: min-content;
   transition: all 250ms ease-in-out;
   border-radius: ;
+}
+
+input, select {
+  color: var(--orange);
+  font-size: 1.80rem;
+  margin: 1rem;
+  padding: 8px;
+  width: 55%;
+  transition: all 250ms ease-in-out;
+  border-radius: ;
+  border-radius: 6px;
+  border: 3px solid var(--orange);
+}
+
+select::placeholder {
+  opacity: .5;
 }
 
 #submit:hover {
@@ -86,12 +100,13 @@ label, input {
 #submit {
   border-radius: 5px;
   border: 3px solid var(--orange)
-  padding: 1rem 1.75rem;
-  margin: auto auto auto 2rem;
+padding: 1rem 1.75rem;
   background-color: var(--orange);
   font-weight: bold;
-  font-size: 1.80rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
+  width: fit-content;
+  padding: 1rem 1.75rem;
   color: white;
   box-shadow: 1.7px 1.3px 2.2px rgb(0 0 0 / 2%), 4.2px 3.1px 5.3px rgb(0 0 0 / 3%), 7.9px 5.8px 10px rgb(0 0 0 / 4%), 14.1px 10.3px 17.9px rgb(0 0 0 / 4%), 26.3px 19.2px 33.4px rgb(0 0 0 / 5%), 63px 46px 80px rgb(0 0 0 / 7%);
 }
@@ -191,6 +206,16 @@ body {
   padding: 2rem 3rem 2rem 7rem;
 }
 
+.entry-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  align-content: flex-start;
+}
+
 .mission-section-container {
   margin: 0 -.25rem;
   padding: 0 .25rem;
@@ -245,13 +270,30 @@ body {
   color: var(--prussian-blue)
 }
 
+.extra-space {
+  margin-bottom: 4rem;
+}
+
 .form {
   background-color: var(--prussian-blue);
   box-shadow: var(--shadow-elevation-high);
-  height: 43vh;
+  height: min-content;
   margin: 0 auto 5em auto;
   padding: 5em;
   width: 55%;
+  border: 10px solid white;
+  transition: all 400ms ease-in-out;
+}
+
+.form:hover {
+  background-color: white;
+  box-shadow: var(--shadow-elevation-high);
+  height: min-content;
+  margin: 0 auto 5em auto;
+  padding: 5em;
+  width: 55%;
+  border: 10px solid var(--prussian-blue);
+  transition: all 400ms ease-in-out;
 }
 
 .four-images {
@@ -371,10 +413,10 @@ body {
 .nav-link-2:hover {
   background-color: rgba(255,255,255,.1);
   border: 2px solid;
-  border-bottom-color: var(--maximum-red);
+  border-bottom-color: white;
   border-left-color: transparent;
   border-right-color: transparent;
-  border-top-color: var(--maximum-red);
+  border-top-color: white;
   text-shadow: -1px 1px 4px rgba(11, 77, 127, .65);
   height: 7vh;
   margin: 0;
@@ -388,10 +430,10 @@ body {
 .nav-hover-javascript {
   background-color: rgba(255,255,255,.1);
   border: 2px solid;
-  border-bottom-color: var(--maximum-red);
+  border-bottom-color: white;
   border-left-color: transparent;
   border-right-color: transparent;
-  border-top-color: var(--maximum-red);
+  border-top-color: white;
   text-shadow: -1px 1px 4px rgba(0, 48, 73, .65);
   height: 7vh;
   margin: 0;
@@ -442,11 +484,11 @@ body {
   z-index: 100;
   top: 80%;
   left: 25%;
-  border: 1px solid white;
+  border: 3px solid white;
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
-  color: white;
+  color: var(--maximum-red);
   box-shadow: 1.7px 1.3px 2.2px rgba(0, 0, 0, 0.02),
 4.2px 3.1px 5.3px rgba(0, 0, 0, 0.028),
 7.9px 5.8px 10px rgba(0, 0, 0, 0.035),
@@ -461,10 +503,6 @@ body {
   top: -20px;
   width: 99vw;
   z-index: -1;
-}
-
-#email {
-  margin: 4em 0em;
 }
 
 /* CSS based on media queries */
