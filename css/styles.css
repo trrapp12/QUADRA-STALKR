@@ -250,13 +250,15 @@ body {
 }
 
 .mission-section-container-hover {
-  box-shadow: inset 3000px 0px 0px 0px var(--prussian-blue);
   color: var(--orange);
+  background-image: url(../assets/trianglify-lowres.png);
+  background-size: 1000px 400px;
 }
 
 .products-section-container-hover {
-  box-shadow: inset 0px 0px 0px 3000px var(--prussian-blue);
   color: var(--orange);
+  background-image: url(../assets/trianglify-lowres.png);
+  background-size: 1000px 400px;
 }
 
 .center-div {
@@ -503,6 +505,11 @@ body {
 14.1px 10.3px 17.9px rgba(0, 0, 0, 0.042),
 26.3px 19.2px 33.4px rgba(0, 0, 0, 0.05),
 63px 46px 80px rgba(0, 0, 0, 0.07);
+}
+
+.triangle {
+    height: 200px;
+    width: 800px;
 }
 
 .video {
