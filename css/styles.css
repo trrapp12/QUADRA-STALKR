@@ -233,6 +233,7 @@ body {
   -webkit-backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
   -webkit-transform: translate3D(0, 0, 0);
+  position: relative;
 }
 
 .catalog-section-container {
@@ -246,19 +247,67 @@ body {
   transition: color 2s ease-in-out, box-shadow 2s ease-in-out;
   -webkit-backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
+  overflow: hidden;
   -webkit-transform: translate3D(0, 0, 0);
 }
 
 .mission-section-container-hover {
   color: var(--orange);
+}
+
+.mission-section-background {
+  left: -860px;
+  height: 250px;
+  width: 860px;
   background-image: url(../assets/trianglify-lowres.png);
   background-size: 1000px 400px;
+  position: absolute;
+  top: 0px;
+  z-index: -10;
+  transition: all 1s ease-in-out;
+}
+
+.mission-section-background-hover {
+  left: 0px;
+  height: 250px;
+  width: 860px;
+  background-image: url(../assets/trianglify-lowres.png);
+  background-size: 1000px 400px;
+  position: absolute;
+  top: 0px;
+  z-index: -10;
+  transition: all 1s ease-in-out;
 }
 
 .products-section-container-hover {
   color: var(--orange);
   background-image: url(../assets/trianglify-lowres.png);
   background-size: 1000px 400px;
+  transition: all 1s ease-in-out;
+}
+
+.products-section-background {
+  left: 956px;
+  height: 250px;
+  width: 951px;
+  background-image: url(../assets/trianglify-lowres.png);
+  background-size: 1000px 400px;
+  position: absolute;
+  top: 200px;
+  z-index: -10;
+  transition: all 1s ease-in-out;
+}
+
+.products-section-background-hover {
+  left: 0px;
+  height: 250px;
+  width: 951px;
+  background-image: url(../assets/trianglify-lowres.png);
+  background-size: 1000px 400px;
+  position: absolute;
+  top: 200px;
+  z-index: -10;
+  transition: all 1s ease-in-out;
 }
 
 .center-div {

@@ -1,16 +1,24 @@
 (() => {
   window.addEventListener('load', () => {
-    let titleH1 = document.getElementById('mission_section_header');
+    let titleH1 = document.getElementById('mission-section');
     let titleH1Two = document.getElementById('products_section_header');
     let titleContainer = document.getElementById('mission-section-container-id'); 
-    let titleContainer2 = document.getElementById('catalog-section-container-id')
+    let titleContainer2 = document.getElementById('catalog-section-container-id');
+    let productsSectionBackground = document.getElementById('products-section-background');
+    let missionSectionBackground = document.getElementById('mission-section-background');
 
     titleContainer.addEventListener('mouseover', () => {
-      titleH1.classList.add('mission-section-container-hover')
-    })
+      console.log('mouseover')
+      titleH1.classList.add('mission-section-container-hover');
+      missionSectionBackground.classList.remove('mission-section-background');
+      missionSectionBackground.classList.add('mission-section-background-hover');
+    });
     
     titleContainer2.addEventListener('mouseover', () => {
-      titleH1Two.classList.add('mission-section-container-hover')
-    })
-  })
+      console.log('mouseover')
+      titleH1Two.classList.add('mission-section-container-hover');
+      productsSectionBackground.classList.remove('products-section-background');
+      productsSectionBackground.classList.add('products-section-background-hover');
+    });
+  });
 })();
