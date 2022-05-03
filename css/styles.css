@@ -1,5 +1,16 @@
 /* CSS for variables and normalization */
 
+
+/* triangle values
+darkest: #000000
+darkerer: #001A27
+darker: #002F49
+dark: #004265
+light: #003049
+
+
+
+*/
 :root {
   /* first test color palette */
   --intense-purple: #2228B5;
@@ -542,7 +553,7 @@ body {
   margin: auto;
   background-color: rgba(255, 255, 255, .3);
   position: absolute;
-  z-index: 100;
+  z-index: 18;
   top: 80%;
   left: 25%;
   border: 3px solid white;
@@ -568,7 +579,7 @@ body {
   margin: auto;
   background-color: rgba(255, 0, 0, 0.5);
   position: absolute;
-  z-index: 100;
+  z-index: 18;
   top: 80%;
   left: 25%;
   border: 3px solid white;

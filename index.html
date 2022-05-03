@@ -23,14 +23,42 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <!--add multiple stylesheets if needed, last one to load will have higher priority for any conflicts-->
+  <link rel="stylesheet" href="css/intro.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+  <div id="counter-container" class="container">
+    <div class="animation-intro">
+      <div class="circle top-left">
+        <div class="line a-intro"></div>
+        <div class="straight a-intro"></div>
+      </div>
+      <div class="circle top-right">
+        <div class="line b-intro"></div>
+        <div class="straight b-intro"></div>
+      </div>
+      <div class="drone-body">
+        <div class="counter">
+          <div class="count" id="count"></div>
+        </div>
+      </div>
+      <div class="circle bottom-left">
+        <div class="line c-intro"></div>
+        <div class="straight c-intro"></div>
+      </div>
+      <div class="circle bottom-right">
+        <div class="line d-intro"></div>
+        <div class="straight d-intro"></div>
+      </div>
+    </div>
+    <p class="page-loading">PAGE LOADING<img src="assets/alien-pixelated-shape-of-a-digital-game.png" alt="alien-icon" class="alien-icon"</p>
+    <p class="page-loading2">PAGE LOADING<img src="assets/alien-pixelated-shape-of-a-digital-game.png" alt="alien-icon" class="alien-icon"</p>
+  </div>
   <div>
   <header id="header" class="header">
 
-    <img id="header-img" src="assets/qUADRAcolor.png" class="logo">
+    <img id="header-img" src="assets/qUADRAcolor.png" class="logo" loading="lazy">
     <nav class="menu" id="nav-bar">
       <ul class="menu-columns">
         <li class="nav-link-2 a"><a class="nav-link" id="nav-link-mission">Mission</a></li>
@@ -92,19 +120,19 @@
       <div class="product-container">
         <div class="product-row">
           <div class="four-images-container-two">
-            <img src="assets/pexels-callum-hilton-7803254.jpg" alt="a drone" class="four-images">
+            <img src="assets/pexels-callum-hilton-7803254.jpg" alt="a drone" class="four-images" loading="lazy">
             <button class="see-product">See Product</button>
           </div> 
           <div class="four-images-container">
-            <img src="assets/pexels-dominika-roseclay-4076334.jpg" alt="a drone" class="four-images">
+            <img src="assets/pexels-dominika-roseclay-4076334.jpg" alt="a drone" class="four-images" loading="lazy">
             <button class="see-product">See Product</button>
           </div> 
           <div class="four-images-container">
-            <img src="assets/pexels-mudassir-ali-4597366.jpg" alt="a drone" class="four-images"> 
+            <img src="assets/pexels-mudassir-ali-4597366.jpg" alt="a drone" class="four-images" loading="lazy"> 
             <button class="see-product">See Product</button>
           </div>
           <div class="four-images-container-two">
-            <img src="assets/pexels-petar-avramoski-6081353.jpg" alt="a drone" class="four-images"> 
+            <img src="assets/pexels-petar-avramoski-6081353.jpg" alt="a drone" class="four-images" loading="lazy"> 
             <button class="see-product">See Product</button>
           </div>
         </div>
@@ -394,8 +422,10 @@
         </div>        
       </form>
     </section>
+    <a href="https://www.flaticon.com/free-icons/alien" title="alien icons">Alien icons created by Freepik - Flaticon</a>
   </main>
-  <!-- your content here... -->
+  <!-- your content here... -->4
+  <script src="js/intro.js"></script>
   <script src="js/scripts.js"></script>
   <script src="js/scroll.js"></script>
   <script src="js/hover.js"></script>
