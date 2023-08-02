@@ -609,7 +609,7 @@ body {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
 
   .call-to-action--title {
     transition: color 2s ease-in-out, box-shadow 2s ease-in-out;
@@ -649,5 +649,14 @@ body {
 
   .video-container {
     min-height: fit-content;
+  }
+
+  .menu-columns {
+    padding: 0px;
+    display: block;
+  }
+
+  .header {
+    display: block;
   }
 }

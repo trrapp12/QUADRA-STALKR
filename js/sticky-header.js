@@ -3,7 +3,7 @@
     const elementHeight = '590px';
     const scrollableElement = window;
     const elementToChange = document.querySelectorAll('.nav-link-2')
-    const elementColor = 'black';
+    const elementColor = 'var(--prussian-blue)';
 
     // check to see if object is window object
     function isElementWindow(element) {
@@ -21,9 +21,13 @@
                 if (scrollableEl.scrollY >= parseInt(height)) {
                     console.log(`scrollableEl height is ${scrollableEl.scrollY}`)
                     element[item].style.backgroundColor = color;
+                    element[item].style.letterSpacing = "2px";
+                    element[item].style.borderRadius = "0px";
                 }
                 else {
                     element[item].style.backgroundColor = 'transparent';
+                    element[item].style.letterSpacing = "";
+                    element[item].style.borderRadius = "8px";
                     console.log('object is not the window')
                 }
             }
