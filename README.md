@@ -241,7 +241,7 @@ So while I was using this I needed to create an eventlistener that would change 
 
 ### ATTRIBUTIONS
 
-Project inspired by [Creative Coding: Making Visuals with JavaScript](https://www.domestika.org/en/courses/2729-creative-coding-making-visuals-with-javascript) by [Bruno Imbrizi](https://www.domestika.org/en/bruno_imbrizi)
+<a href="https://www.flaticon.com/free-icons/alien" title="alien icons" class="alien-icons">Alien icons created by Freepik - Flaticon</a>
 
 ---
 
