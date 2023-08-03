@@ -1,6 +1,6 @@
 (() => {
     // set constants
-    const elementHeight = '590px';
+    const elementHeight = '400px';
     const scrollableElement = window;
     const elementToChange = document.querySelectorAll('.nav-link-2')
     const elementColor = 'var(--prussian-blue)';

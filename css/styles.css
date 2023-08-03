@@ -659,4 +659,40 @@ body {
   .header {
     display: block;
   }
+
+  .product-container {
+    display: block;
+    margin: 4em 0em;
+  }
+
+  .product-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: auto;
+    margin: 0px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .four-images {
+    width: auto;
+    height: 50vh;
+    margin: 0em 0em;
+    object-fit: cover;
+    transition: all 500ms ease-out;
+  }
+
+  .four-images-container {
+    overflow: hidden;
+    max-height: 50vh;
+    display: inline-block;
+    /* max-width: 15.8vw; */
+    position: relative;
+  }
+
+  .nav-link-2 {
+    padding: 1em;
+    height: fit-content;
+  }
 }
