@@ -46,6 +46,8 @@ To use the app simply click on the ```View Project``` button or visit <a href="h
 
 ### Project demonstrates the following:
 
+- [X] A 🔥🔥🔥little animation to intro the page.
+
 - [X] Javascript closures.
 
 - [X] **User Story #1:** My product landing page should have a header element with a corresponding id="header".
@@ -90,37 +92,136 @@ So while I was using this I needed to create an eventlistener that would change 
 
 ```javascript  
 
-    function setTimer() {
-         const maxDelay = 2500;
-         const delay = Math.floor(Math.random() * 2 + 1) * maxDelay;
-         setInterval(() => {
-             renderSquares()
-             setTimer()
-         }, delay)
+(() => {
+    // set constants
+    const elementHeight = '400px';
+    const scrollableElement = window;
+    const elementToChange = document.querySelectorAll('.nav-link-2')
+    const elementColor = 'var(--prussian-blue)';
+
+    // check to see if object is window object
+    function isElementWindow(element) {
+        console.log(`isElementWindow() fired. Element is ${element}, logical comparison returns ${element === window}`)
+        return element === window;
+    }
+    // define scroll event handler
+    function scrollHandler(height, scrollableEl, element, color) {
+        console.log('scrollHandler fired')
+        console.log('element in scrollHander is ',element)
+        console.log(element)
+        // when the top of the window is equal to height of the header, turn header background opaque
+        for (const item in element) {
+            if (isElementWindow(scrollableEl)) {
+                if (scrollableEl.scrollY >= parseInt(height)) {
+                    console.log(`scrollableEl height is ${scrollableEl.scrollY}`)
+                    element[item].style.backgroundColor = color;
+                    element[item].style.letterSpacing = "2px";
+                    element[item].style.borderRadius = "0px";
+                }
+                else {
+                    element[item].style.backgroundColor = 'transparent';
+                    element[item].style.letterSpacing = "";
+                    element[item].style.borderRadius = "8px";
+                    console.log('object is not the window')
+                }
+            }
+        }
     }
 
-    setTimer()
+    // create throttle handler
+    function throttleHandler(func, delay) {
+        let lastCall = 0;
+        return function(...args) {
+            let currentTime = Date.now();
+            if (lastCall - currentTime >= delay) {
+                func(...args);
+                lastCall = currentTime;
+            } 
+        }
+    }
+
+    // call scroll eventhandler in throttle handler
+    window.addEventListener('scroll', () => {
+        let tableData = [
+            {
+                name: "elementHeight",
+                value: elementHeight
+            },
+            {
+                name: "scrollableElement",
+                value: scrollableElement
+            },
+            {
+                name: "elementToChange",
+                value: elementToChange
+            },
+            {
+                name: "elementColor",
+                value: elementColor
+            }
+        ];
+
+        console.table(tableData)
+
+        throttleHandler(scrollHandler(elementHeight, scrollableElement, elementToChange, elementColor))
+    })
+    // attach handler to window.scroll event
+
+    
+})();
     
 ```
     
-My thought was to create a delay with `(Math.floor(Math.random() * 2) + 1 * maxDelay` where `maxDelay = 2500`.  This was unsucessful 1) because the `+1` served no purpose, and 2) because the `Math.floor()` created a situation where it would only return 1 or 5 since the 2 was always getting rounded down to either 0 or 1.  The second issue was that the timing function would start with a random interval, but eventually it would gradually speed up more and more until it became sickenly fast.  I thought at first it was because timesing something by a fraction over and over again will ultimately make it smaller and smaller.  However, when I console.log'ed the issue the interval times were fine.  Then I realized what was happening was every time the function fired it created a separate setInterval instance.  So I had to figure out how to clear them.  I could just add a `clearInterval()` since they were named.  So I discovered I could loop over the window object to find all the intervals and clear them all before setting a new one. This answer worked swimmingly.  The final timer function was this: 
+2) I decided I wanted to create an animation
 
 ```javascript
 
-    function setTimer() {
-        const maxDelay = 2500;
-        const delay = (Math.random() * 2) * maxDelay;
-        console.log(delay)
-        setInterval(() => {
-            for (let i = 0; i < 99999; i++) {
-                window.clearInterval(i)
-            }
-            renderSquares()
-            setTimer()
-        }, delay)
+(() => {
+  window.addEventListener('load', () => {
+    console.log('window loaded');
+       
+    const lineObject = document.getElementsByClassName('line');
+    const secondLineObject = document.getElementsByClassName('straight');
+    const displayWindow = document.getElementById('count');
+    
+    for (const [key, value] of Object.entries(lineObject)) {
+      value.classList.add('spin-animation')
     }
+    
+    for (const [key, value] of Object.entries(secondLineObject)) {
+      value.classList.add('spin-animation')
+    }
+    
+    function counter() {
+     count = 10;   
 
-    setTimer()
+     setInterval(depricateTime, "1000")     
+      
+     function depricateTime() {  
+       if (count >= 0) {
+         displayTime(count); 
+         count--;
+       } else {
+         clearInterval(depricateTime);
+         closeWindow();
+       }                       
+       
+       
+     } 
+     
+      function displayTime(count) {
+        displayWindow.innerHTML = count;
+      }
+      
+      function closeWindow() {
+        document.getElementById('counter-container').style.display = "none"
+      }
+    }
+    
+    counter();
+        
+  })
+})()
 
 ```
 
@@ -128,9 +229,7 @@ My thought was to create a delay with `(Math.floor(Math.random() * 2) + 1 * maxD
 
 ### MY OWN PERSONAL CONTRIBUTIONS INCLUDED 
 
-- [X] creating the random, ranged timing interval
-- [X] creating an animation effect that randomly chooses a color scheme for the blocks
-- [X] fixing the functionality so it would rerender on window resizeand the additionaly decoration on the pages.
+- [X] 100% of the work on this project was my own.  The original requirements of the project, as listed in the user stories, were provided for direction as part of the Free Code Camp course.
 
 ---
 
