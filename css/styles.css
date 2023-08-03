@@ -139,6 +139,35 @@ ul {
   list-style-type: none;
 }
 
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2em;
+}
+
+a:link {
+  color: var(--orange)
+}
+
+a:visited {
+  color: purple;
+}
+
+a:focus,
+a:hover {
+  border-bottom: 1px solid;
+}
+
+a:active {
+  color: red;
+}
+
+a[href^="http"] {
+  background: url("external-link-52.png") no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+}
+
 
 /* CSS based on classes */
 
@@ -154,6 +183,7 @@ ul {
   width: fit-content;
   text-align: center;
   margin: 0em auto 0em 2em;
+  cursor: auto;
 }
 
 .animation {
