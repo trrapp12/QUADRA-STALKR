@@ -658,6 +658,12 @@ body {
 
   .header {
     display: block;
+    top: 0;
+  }
+
+  #nav-bar>ul:nth-child(1),
+  #nav-bar>ul:nth-child(1) {
+    border-top: 0px solid transparent;
   }
 
   .product-container {
@@ -694,5 +700,35 @@ body {
   .nav-link-2 {
     padding: 1em;
     height: fit-content;
+  }
+
+  .form {
+    background-color: var(--prussian-blue);
+    box-shadow: var(--shadow-elevation-high);
+    height: min-content;
+    margin: 0 auto 5em auto;
+    padding: 1em;
+    width: 100%;
+    border: 10px solid white;
+    transition: all 400ms ease-in-out;
+  }
+
+  .form:hover {
+    background-color: white;
+    box-shadow: var(--shadow-elevation-high);
+    height: min-content;
+    margin: 0 auto 5em auto;
+    padding: 1em;
+    width: 100%;
+    border: 10px solid var(--prussian-blue);
+    transition: all 400ms ease-in-out;
+  }
+
+  .label {
+    font-size: 1.25rem;
+  }
+
+  input::placeholder {
+    font-size: 1rem;
   }
 }
