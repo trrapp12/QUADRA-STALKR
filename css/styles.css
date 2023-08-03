@@ -147,6 +147,15 @@ ul {
 
 }
 
+.alien-icons {
+  color: var(--orange);
+  font-family: Ultima, sans-serif;
+  font-size: .75rem;
+  width: fit-content;
+  text-align: center;
+  margin: 0em auto 0em 2em;
+}
+
 .animation {
   -webkit-animation: vibrate 0.3s linear infinite both;
   animation: vibrate 0.3s linear infinite both;
