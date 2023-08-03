@@ -27,16 +27,26 @@ https://user-images.githubusercontent.com/11747875/171573424-95a2743b-8939-4103-
 
 ### Description:
 
+> "Drones ply the liminal space between the physical and the digital -- pilots fly them, but aren't in them.
+> They are versatile and fascinating objects -- the things they can do range from the mundane (aerial photography)
+> to the spectacular
+>
+> -- John Batelle
+
 
 This is an example for a Product Landing Page for the QUADRAStalkr, an imaginary drone from an imaginary company (that I have all the rights to :smirk: :smirk: :smirk: ).  Includes use of video media, navigation elements, smart use of CSS animation to create an interactive design, and a form element that submits to a static page.  
 
-<br>
-<br>
+---
+
+### QUICKSTART GUIDE: 
+
+To use the app simply click on the ```View Project``` button or visit <a href="https://trrapp12.github.io/Product-Page/">https://trrapp12.github.io/Product-Page/</a>. 
 
 ---
 
 ### Project demonstrates the following:
 
+- [X] Javascript closures.
 
 - [X] **User Story #1:** My product landing page should have a header element with a corresponding id="header".
 
@@ -68,14 +78,71 @@ This is an example for a Product Landing Page for the QUADRAStalkr, an imaginary
 
 - [X] **User Story #15:** My product landing page should utilize CSS flexbox at least once.
 
-<br>
-<br>
+---
+
+### CHALLENGES I OVERCAME...
+
+So while I was using this I needed to create an eventlistener that would change the size and color of the text once the navbar got a certain distance down.  This created a number of interesting issues.  
+
+1) How do you prevent an expensive DOM traversal every time the smallest pixel is scrolled?
+
+* to fix this I had to come up with code that would throttle the the event calls to every 200ms and I had to use a closure so I could access the scope of a parent function to do it.  See below:
+
+```javascript  
+
+    function setTimer() {
+         const maxDelay = 2500;
+         const delay = Math.floor(Math.random() * 2 + 1) * maxDelay;
+         setInterval(() => {
+             renderSquares()
+             setTimer()
+         }, delay)
+    }
+
+    setTimer()
+    
+```
+    
+My thought was to create a delay with `(Math.floor(Math.random() * 2) + 1 * maxDelay` where `maxDelay = 2500`.  This was unsucessful 1) because the `+1` served no purpose, and 2) because the `Math.floor()` created a situation where it would only return 1 or 5 since the 2 was always getting rounded down to either 0 or 1.  The second issue was that the timing function would start with a random interval, but eventually it would gradually speed up more and more until it became sickenly fast.  I thought at first it was because timesing something by a fraction over and over again will ultimately make it smaller and smaller.  However, when I console.log'ed the issue the interval times were fine.  Then I realized what was happening was every time the function fired it created a separate setInterval instance.  So I had to figure out how to clear them.  I could just add a `clearInterval()` since they were named.  So I discovered I could loop over the window object to find all the intervals and clear them all before setting a new one. This answer worked swimmingly.  The final timer function was this: 
+
+```javascript
+
+    function setTimer() {
+        const maxDelay = 2500;
+        const delay = (Math.random() * 2) * maxDelay;
+        console.log(delay)
+        setInterval(() => {
+            for (let i = 0; i < 99999; i++) {
+                window.clearInterval(i)
+            }
+            renderSquares()
+            setTimer()
+        }, delay)
+    }
+
+    setTimer()
+
+```
+
+---
+
+### MY OWN PERSONAL CONTRIBUTIONS INCLUDED 
+
+- [X] creating the random, ranged timing interval
+- [X] creating an animation effect that randomly chooses a color scheme for the blocks
+- [X] fixing the functionality so it would rerender on window resizeand the additionaly decoration on the pages.
 
 ---
 
 ### FREE CODE CAMP RESPONSIVE WEB DESIGN CERTIFICATE:
 
 ![freeCodeCampResponsiveWebDesign.png](https://user-images.githubusercontent.com/11747875/257409023-964325b1-9779-48c7-bc0a-a9852a93d0cb.png)
+
+---
+
+### ATTRIBUTIONS
+
+Project inspired by [Creative Coding: Making Visuals with JavaScript](https://www.domestika.org/en/courses/2729-creative-coding-making-visuals-with-javascript) by [Bruno Imbrizi](https://www.domestika.org/en/bruno_imbrizi)
 
 ---
 
