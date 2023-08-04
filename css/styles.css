@@ -59,6 +59,7 @@ a {
 
 body {
   cursor: url(qUADRA_cursor.png), auto;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -687,6 +688,15 @@ body {
     font-size: 4rem;
   }
 
+  .header {
+    display: block;
+    top: 0;
+  }
+
+  .label {
+    font-size: 1.25rem;
+  }
+
   .logo {
     display: none;
     transition: all 1000ms ease-in;
@@ -700,6 +710,21 @@ body {
     padding: 0px;
   }
 
+  .menu-columns {
+    padding: 0px;
+    display: block;
+  }
+
+  .nav-link-2 {
+    padding: 1em;
+    height: fit-content;
+  }
+
+  #nav-bar>ul:nth-child(1),
+  #nav-bar>ul:nth-child(1) {
+    border-top: 0px solid transparent;
+  }
+
   p {
     color: var(--prussian-blue);
     font-family: study, serif;
@@ -707,33 +732,8 @@ body {
     font-style: normal;
     font-weight: 100;
     margin: 4em auto auto auto;
-    max-width: 597px;
+    max-width: 90vw;
     line-height: 1.5;
-  }
-
-  .video {
-    height: auto;
-    width: 100vw;
-    z-index: -1;
-  }
-
-  .video-container {
-    min-height: fit-content;
-  }
-
-  .menu-columns {
-    padding: 0px;
-    display: block;
-  }
-
-  .header {
-    display: block;
-    top: 0;
-  }
-
-  #nav-bar>ul:nth-child(1),
-  #nav-bar>ul:nth-child(1) {
-    border-top: 0px solid transparent;
   }
 
   .product-container {
@@ -751,18 +751,15 @@ body {
     justify-content: center;
   }
 
-
-
-  .nav-link-2 {
-    padding: 1em;
-    height: fit-content;
+  .video {
+    height: auto;
+    width: 100vw;
+    z-index: -1;
   }
 
-  .label {
-    font-size: 1.25rem;
+  .video-container {
+    min-height: fit-content;
   }
-
-
 
 }
 
