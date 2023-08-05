@@ -9,7 +9,9 @@
 
     titleContainer.addEventListener('mouseover', () => {
       console.log('mouseover')
+      // turns the H1 orange
       titleH1.classList.add('mission-section-container-hover');
+      // changes left position from -860px to 0px
       missionSectionBackground.classList.remove('mission-section-background');
       missionSectionBackground.classList.add('mission-section-background-hover');
     });

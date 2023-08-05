@@ -715,6 +715,14 @@ body {
     display: block;
   }
 
+  .mission-div:hover {
+    width: 400%;
+  }
+
+  .mission-div:focus {
+    width: 400%;
+  }
+
   .nav-link-2 {
     padding: 1em;
     height: fit-content;
