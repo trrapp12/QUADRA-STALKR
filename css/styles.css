@@ -356,6 +356,10 @@ body {
   transition: all 1s ease-in-out;
 }
 
+main>.contacts-section {
+  display: flex;
+}
+
 .center-div {
   display: flex;
   flex-direction: column;
@@ -465,8 +469,12 @@ body {
 
 .header {
   display: grid;
+<<<<<<< Updated upstream
   grid-template-columns: repeat(auto-fill, min-max(100px, 1fr));
   grid-template-rows: 1fr;
+=======
+  grid-template-columns: repeat(auto-fill, min-max(100px, 1fr)) grid-template-rows: 1fr;
+>>>>>>> Stashed changes
   position: fixed;
   top: 10px;
   width: 100%;
@@ -597,21 +605,34 @@ body {
   margin-bottom: 4em;
 }
 
+<<<<<<< Updated upstream
 .product-container {
   margin: 12em auto;
   display: grid;
   grid-template-rows: 50vh 50vh;
   grid-template-columns: 1fr 1fr 1fr;
   width: 80%;
+=======
+.photo-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: self-end;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+>>>>>>> Stashed changes
 }
 
 .product-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 50%;
+  width: 47%;
   height: 100vh;
-  margin: auto auto 4em auto;
+  margin: 0px;
   justify-content: center;
 }
 
@@ -636,7 +657,16 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   color: var(--maximum-red);
+<<<<<<< Updated upstream
   box-shadow: 1.7px 1.3px 2.2px rgba(0, 0, 0, 0.02), 4.2px 3.1px 5.3px rgba(0, 0, 0, 0.028), 7.9px 5.8px 10px rgba(0, 0, 0, 0.035), 14.1px 10.3px 17.9px rgba(0, 0, 0, 0.042), 26.3px 19.2px 33.4px rgba(0, 0, 0, 0.05), 63px 46px 80px rgba(0, 0, 0, 0.07);
+=======
+  box-shadow: 1.7px 1.3px 2.2px rgba(0, 0, 0, 0.02),
+    4.2px 3.1px 5.3px rgba(0, 0, 0, 0.028),
+    7.9px 5.8px 10px rgba(0, 0, 0, 0.035),
+    14.1px 10.3px 17.9px rgba(0, 0, 0, 0.042),
+    26.3px 19.2px 33.4px rgba(0, 0, 0, 0.05),
+    63px 46px 80px rgba(0, 0, 0, 0.07);
+>>>>>>> Stashed changes
   transition: all 500ms ease-in-out;
   grid-column: 5 / 10;
   grid-row: 10 / 12;
@@ -654,7 +684,16 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   color: white;
+<<<<<<< Updated upstream
   box-shadow: 1.7px 1.3px 2.2px rgba(0, 0, 0, 0.02), 4.2px 3.1px 5.3px rgba(0, 0, 0, 0.028), 7.9px 5.8px 10px rgba(0, 0, 0, 0.035), 14.1px 10.3px 17.9px rgba(0, 0, 0, 0.042), 26.3px 19.2px 33.4px rgba(0, 0, 0, 0.05), 63px 46px 80px rgba(0, 0, 0, 0.07);
+=======
+  box-shadow: 1.7px 1.3px 2.2px rgba(0, 0, 0, 0.02),
+    4.2px 3.1px 5.3px rgba(0, 0, 0, 0.028),
+    7.9px 5.8px 10px rgba(0, 0, 0, 0.035),
+    14.1px 10.3px 17.9px rgba(0, 0, 0, 0.042),
+    26.3px 19.2px 33.4px rgba(0, 0, 0, 0.05),
+    63px 46px 80px rgba(0, 0, 0, 0.07);
+>>>>>>> Stashed changes
   transition: all 500ms ease-in-out;
 }
 
@@ -679,6 +718,7 @@ body {
   }
 }
 
+<<<<<<< Updated upstream
 @media (max-width: 950px) {
 
   .call-to-action--title {
@@ -796,5 +836,10 @@ body {
 
   input::placeholder {
     font-size: .9rem;
+=======
+@media screen and (max-width: 1350px) {
+  * {
+    border: 1px solid red;
+>>>>>>> Stashed changes
   }
 }
