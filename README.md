@@ -243,6 +243,12 @@ So while I was using this I needed to create an eventlistener that would change 
 
 <a href="https://www.flaticon.com/free-icons/alien" title="alien icons" class="alien-icons">Alien icons created by Freepik - Flaticon</a>
 
+* Callum Hilton
+* Dids
+* Dominika Roseclay
+* Mudassir Ali
+* Petar Avramoski
+
 ---
 
 ### YOU CAN FIND ME AT:
