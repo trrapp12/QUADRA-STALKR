@@ -177,7 +177,7 @@ a[href^="http"] {
 
 }
 
-.alien-icons {
+.alien-icon {
   color: var(--orange);
   font-family: Ultima, sans-serif;
   font-size: .75rem;
@@ -185,6 +185,12 @@ a[href^="http"] {
   text-align: center;
   margin: 0em auto 0em 2em;
   cursor: auto;
+}
+
+.alien-icons {
+  display: block;
+  width: 100%;
+  height: fit-content;
 }
 
 .animation {
@@ -622,7 +628,7 @@ main>.contacts-section {
 
 .section {
   display: contents;
-  height: 20vh;
+  height: min-content;
   margin: 0 0 2em;
   position: relative;
   width: 100%;
