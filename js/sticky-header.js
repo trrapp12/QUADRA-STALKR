@@ -19,7 +19,7 @@
         console.log('scrollHandler fired')
         // when the top of the window is equal to height of the header, turn header background opaque
         for (const item in element) {
-            if (isElementWindow(scrollableEl)) {
+            if (isElementWindow(scrollableEl) && window.innerWidth >= "950px") {
                 if (scrollableEl.scrollY >= parseInt(height)) {
                     console.log(`scrollableEl height is ${scrollableEl.scrollY}`)
                     element[item].style.backgroundColor = color;
