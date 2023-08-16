@@ -1,8 +1,6 @@
 (() => {
     // set constants
-    const elementHeight = () => {
-        return `${document.body.clientWidth * .5}px`
-    };
+    const elementHeight = `${document.body.clientHeight * .5}px`;
     const scrollableElement = window;
     const elementToChange = document.querySelectorAll('.nav-link-2')
     const elementColor = 'var(--prussian-blue)';
@@ -15,14 +13,13 @@
     }
     // define scroll event handler
     function scrollHandler(height, scrollableEl, element, color) {
-        console.log(height)
-        console.log('scrollHandler fired')
         // when the top of the window is equal to height of the header, turn header background opaque
         for (const item in element) {
-            if (isElementWindow(scrollableEl) && window.innerWidth >= "950px") {
-                if (scrollableEl.scrollY >= parseInt(height)) {
-                    console.log(`scrollableEl height is ${scrollableEl.scrollY}`)
-                    element[item].style.backgroundColor = color;
+            if (isElementWindow(scrollableEl)) {
+                console.log(`scrollableEl height is ${scrollableEl.scrollY}`)
+                console.log(element[item])
+                if (scrollableEl.scrollY >= (parseInt(height) - (parseInt(height) * .9))) {
+                    element[item].style.backgroundColor = `${color}`;
                     element[item].style.letterSpacing = "2px";
                     element[item].style.borderRadius = "0px";
                     logo.style.display = "none"
@@ -51,6 +48,8 @@
 
     // call scroll eventhandler in throttle handler
     window.addEventListener('scroll', () => {
+
+        // tableData is only for use of console.table
         let tableData = [
             {
                 name: "elementHeight",
@@ -70,11 +69,12 @@
             }
         ];
 
-        console.table(tableData)
+        // console.table(tableData)
 
-        throttleHandler(scrollHandler(elementHeight(), scrollableElement, elementToChange, elementColor))
+        throttleHandler(scrollHandler(elementHeight, scrollableElement, elementToChange, elementColor))
     })
     // attach handler to window.scroll event
 
     
 })();
+

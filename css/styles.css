@@ -570,7 +570,7 @@ main>.contacts-section {
 .nav-link-2 {
   border: 2px solid transparent;
   border-radius: 8px;
-  height: 7vh;
+  height: fit-content;
   margin: 0;
   padding: 1em 0em;
   text-align: center;
@@ -587,7 +587,7 @@ main>.contacts-section {
   border-right-color: transparent;
   border-top-color: white;
   text-shadow: -1px 1px 4px rgba(11, 77, 127, .65);
-  height: 7vh;
+  height: fit-content;
   margin: 0;
   padding: 1em 0em;
   text-align: center;
@@ -606,7 +606,7 @@ main>.contacts-section {
   text-shadow: -1px 1px 4px rgba(0, 48, 73, .65);
   height: 7vh;
   margin: 0;
-  padding: .25em;
+  padding: 1em 0em;
   text-align: center;
   width: 100%;
   transition-duration: 500ms;
