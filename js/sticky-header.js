@@ -76,4 +76,3 @@
         throttleHandler(scrollHandler(elementHeight, scrollableElement, elementToChange, elementColor))
     })
 })();
-
