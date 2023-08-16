@@ -1,6 +1,6 @@
 (() => {
     // set constants
-    const elementHeight = `${document.body.clientHeight * .5}px`;
+    const elementHeight = `${document.body.clientHeight}px`;
     const scrollableElement = window;
     const elementToChange = document.querySelectorAll('.nav-link-2')
     const elementColor = 'var(--prussian-blue)';
@@ -16,8 +16,7 @@
         // when the top of the window is equal to height of the header, turn header background opaque
         for (const item in element) {
             if (isElementWindow(scrollableEl)) {
-                console.log(`scrollableEl height is ${scrollableEl.scrollY}`)
-                console.log(element[item])
+                // future improvement would take the window height/ window width to get an aspect ratio and then times that by the height to get a more dynamic response, instead of guesstimating 10% scroll down
                 if (scrollableEl.scrollY >= (parseInt(height) - (parseInt(height) * .9))) {
                     element[item].style.backgroundColor = `${color}`;
                     element[item].style.letterSpacing = "2px";
