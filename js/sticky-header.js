@@ -23,7 +23,8 @@
                     element[item].style.borderRadius = "0px";
                     logo.style.display = "none"
                 }
-                else {
+                // had to create a cumbersome else if instead of just a else statement because the logo would come back after CSS had removed it if you scrolled back up to the top
+                else if (window.innerWidth >= '950px' && scrollableEl.scrollY >= (parseInt(height) - (parseInt(height) * .9))) {
                     element[item].style.backgroundColor = 'transparent';
                     element[item].style.letterSpacing = "";
                     element[item].style.borderRadius = "8px";
