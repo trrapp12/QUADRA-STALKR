@@ -209,6 +209,7 @@ a[href^="http"] {
   display: block;
   width: 100%;
   height: fit-content;
+  padding-left: 2em;
 }
 
 .animation {
