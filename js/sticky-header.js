@@ -70,11 +70,11 @@
             }
         ];
 
-        // console.table(tableData)
+        console.table(tableData)
 
+        // attach handler to window.scroll event
         throttleHandler(scrollHandler(elementHeight, scrollableElement, elementToChange, elementColor))
     })
-    // attach handler to window.scroll event
 
     
 })();
