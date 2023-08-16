@@ -50,6 +50,8 @@ To use the app simply click on the ```View Project``` button or visit <a href="h
 
 - [X] Javascript closures.
 
+- [X] Creating a throttler for a scroll event.
+
 - [X] **User Story #1:** My product landing page should have a header element with a corresponding id="header".
 
 - [X] **User Story #2:** I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
@@ -94,10 +96,11 @@ So while I was using this I needed to create an eventlistener that would change 
 
 (() => {
     // set constants
-    const elementHeight = '400px';
+    const elementHeight = `${document.body.clientHeight}px`;
     const scrollableElement = window;
     const elementToChange = document.querySelectorAll('.nav-link-2')
     const elementColor = 'var(--prussian-blue)';
+    const logo = document.getElementById('header-img');
 
     // check to see if object is window object
     function isElementWindow(element) {
@@ -106,23 +109,23 @@ So while I was using this I needed to create an eventlistener that would change 
     }
     // define scroll event handler
     function scrollHandler(height, scrollableEl, element, color) {
-        console.log('scrollHandler fired')
-        console.log('element in scrollHander is ',element)
-        console.log(element)
         // when the top of the window is equal to height of the header, turn header background opaque
         for (const item in element) {
             if (isElementWindow(scrollableEl)) {
-                if (scrollableEl.scrollY >= parseInt(height)) {
-                    console.log(`scrollableEl height is ${scrollableEl.scrollY}`)
-                    element[item].style.backgroundColor = color;
+                // future improvement would take the window height/ window width to get an aspect ratio and then times that by the height to get a more dynamic response, instead of guesstimating 10% scroll down
+                if (scrollableEl.scrollY >= (parseInt(height) - (parseInt(height) * .9))) {
+                    element[item].style.backgroundColor = `${color}`;
                     element[item].style.letterSpacing = "2px";
                     element[item].style.borderRadius = "0px";
+                    logo.style.display = "none"
                 }
-                else {
+                // had to create a cumbersome else if instead of just a else statement because the logo would come back after CSS had removed it if you scrolled back up to the top
+                else if (window.innerWidth >= 950 && scrollableEl.scrollY <= (parseInt(height) - (parseInt(height) * .9))) {
+                    console.log('entering logo resize else if')
                     element[item].style.backgroundColor = 'transparent';
                     element[item].style.letterSpacing = "";
                     element[item].style.borderRadius = "8px";
-                    console.log('object is not the window')
+                    logo.style.display = "block"
                 }
             }
         }
@@ -142,6 +145,8 @@ So while I was using this I needed to create an eventlistener that would change 
 
     // call scroll eventhandler in throttle handler
     window.addEventListener('scroll', () => {
+
+        // tableData is only for use of console.table
         let tableData = [
             {
                 name: "elementHeight",
@@ -163,11 +168,9 @@ So while I was using this I needed to create an eventlistener that would change 
 
         console.table(tableData)
 
+        // attach handler to window.scroll event
         throttleHandler(scrollHandler(elementHeight, scrollableElement, elementToChange, elementColor))
     })
-    // attach handler to window.scroll event
-
-    
 })();
     
 ```
