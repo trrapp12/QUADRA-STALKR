@@ -64,7 +64,7 @@ body {
 
 h1 {
   font-family: Ultima;
-  font-size: 5rem;
+  font-size: 5vw;
 }
 
 html {
@@ -268,7 +268,7 @@ body {
 .call-to-action--title {
   transition: color 2s ease-in-out, box-shadow 2s ease-in-out;
   margin: 20vh 0 0 0;
-  padding: 2rem 3rem 2rem 7rem;
+  padding: 1vw 2vw 1vw 3vw;
 }
 
 .entry-container {
@@ -282,32 +282,32 @@ body {
 }
 
 .mission-section-container {
+  box-shadow: inset 0px 0px 0px 0px var(--prussian-blue);
+  color: var(--prussian-blue);
   margin: 0 -.25rem;
   padding: 0 .25rem;
-  width: 50%;
+  position: relative;
   text-align: left;
-  color: var(--prussian-blue);
-  box-shadow: inset 0px 0px 0px 0px var(--prussian-blue);
   transition: color 2s ease-in-out, box-shadow 2s ease-in-out;
   -webkit-backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
   -webkit-transform: translate3D(0, 0, 0);
-  position: relative;
+  width: 50%;
 }
 
 .catalog-section-container {
-  margin: 0 -.25rem;
-  padding: 0 .25rem;
-  margin-left: 50%;
-  width: 50%;
-  text-align: left;
-  color: var(--prussian-blue);
   box-shadow: inset 0px 0px 0px 0px var(--prussian-blue);
+  color: var(--prussian-blue);
+  margin: 0 -.25rem;
+  margin-left: 50%;
+  padding: 0 .25rem;
+  position: relative;
+  text-align: left;
   transition: color 2s ease-in-out, box-shadow 2s ease-in-out;
   -webkit-backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
-  overflow: hidden;
   -webkit-transform: translate3D(0, 0, 0);
+  width: 50%;
 }
 
 .mission-section-container-hover {
@@ -316,7 +316,7 @@ body {
 
 .mission-section-background {
   left: -860px;
-  height: 250px;
+  height: 16vw;
   width: 860px;
   background-image: url(../assets/trianglify-lowres.png);
   background-size: 1000px 400px;
@@ -328,8 +328,8 @@ body {
 
 .mission-section-background-hover {
   left: 0px;
-  height: 250px;
-  width: 860px;
+  height: 16vw;
+  width: 50vw;
   background-image: url(../assets/trianglify-lowres.png);
   background-size: 1000px 400px;
   position: absolute;
@@ -347,26 +347,29 @@ body {
 
 .products-section-background {
   left: 956px;
-  height: 250px;
+  height: 16vw;
   width: 951px;
   background-image: url(../assets/trianglify-lowres.png);
   background-size: 1000px 400px;
   position: absolute;
-  top: 200px;
   z-index: -10;
   transition: all 1s ease-in-out;
 }
 
 .products-section-background-hover {
   left: 0px;
-  height: 250px;
-  width: 951px;
+  height: 16vw;
+  width: 50vw;
   background-image: url(../assets/trianglify-lowres.png);
   background-size: 1000px 400px;
   position: absolute;
-  top: 200px;
   z-index: -10;
   transition: all 1s ease-in-out;
+  top: 0px;
+}
+
+main {
+  overflow: hidden;
 }
 
 main>.contacts-section {
@@ -778,13 +781,6 @@ main>.contacts-section {
 }
 
 @media (max-width: 950px) {
-
-  .call-to-action--title {
-    transition: color 2s ease-in-out, box-shadow 2s ease-in-out;
-    margin: 0px;
-    padding: 2rem 2rem 2rem 2rem;
-    font-size: 4rem;
-  }
 
   .label {
     font-size: 1.25rem;
