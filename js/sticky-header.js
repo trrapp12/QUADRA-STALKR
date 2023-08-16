@@ -24,7 +24,8 @@
                     logo.style.display = "none"
                 }
                 // had to create a cumbersome else if instead of just a else statement because the logo would come back after CSS had removed it if you scrolled back up to the top
-                else if (window.innerWidth >= '950px' && scrollableEl.scrollY >= (parseInt(height) - (parseInt(height) * .9))) {
+                else if (window.innerWidth >= 950 && scrollableEl.scrollY <= (parseInt(height) - (parseInt(height) * .9))) {
+                    console.log('entering logo resize else if')
                     element[item].style.backgroundColor = 'transparent';
                     element[item].style.letterSpacing = "";
                     element[item].style.borderRadius = "8px";
