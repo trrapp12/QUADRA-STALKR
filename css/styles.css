@@ -83,6 +83,24 @@ label {
   border-radius: ;
 }
 
+.mouse-house {
+  border-top: 4px solid var(--intense-purple);
+  border-right: 3px solid var(--intense-purple);
+  border-bottom: 2px solid var(--intense-purple);
+  border-left: 1px solid var(--intense-purple);
+  mix-blend-mode: difference;
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  height: 100px;
+  width: 100px;
+  z-index: 500;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 38%, rgba(255, 255, 255, 1) 100%);
+  animation: 10s linear infinite;
+  animation-name: rotate;
+}
+
 input,
 select {
   color: var(--orange);
@@ -884,5 +902,15 @@ main>.contacts-section {
 
   input::placeholder {
     font-size: .9rem;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg)
+  }
+
+  to {
+    transform: rotate(360deg)
   }
 }
