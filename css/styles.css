@@ -604,7 +604,7 @@ main>.contacts-section {
   border-right-color: transparent;
   border-top-color: white;
   text-shadow: -1px 1px 4px rgba(0, 48, 73, .65);
-  height: 7vh;
+  height: fit-content;
   margin: 0;
   padding: 1em 0em;
   text-align: center;
