@@ -91,6 +91,7 @@ label {
   mix-blend-mode: difference;
   position: absolute;
   border-radius: 50%;
+  box-shadow: var(--shadow-elevation-high);
   pointer-events: none;
   height: 100px;
   width: 100px;
