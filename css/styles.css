@@ -68,7 +68,7 @@ h1 {
 
 html {
   scroll-behavior: smooth;
-  cursor: url('/assets/cursor.png'), auto;
+  /* cursor: url('/assets/cursor.png'), auto; */
 }
 
 label {
