@@ -170,7 +170,8 @@ ul {
 
 #submit {
   border-radius: 5px;
-  border: 3px solid var(--orange) padding: 1rem 1.75rem;
+  border: 3px solid var(--orange);
+  padding: 1rem 1.75rem;
   background-color: var(--orange);
   font-weight: bold;
   font-size: 1.3rem;
@@ -180,7 +181,6 @@ ul {
   color: white;
   box-shadow: 1.7px 1.3px 2.2px rgb(0 0 0 / 2%), 4.2px 3.1px 5.3px rgb(0 0 0 / 3%), 7.9px 5.8px 10px rgb(0 0 0 / 4%), 14.1px 10.3px 17.9px rgb(0 0 0 / 4%), 26.3px 19.2px 33.4px rgb(0 0 0 / 5%), 63px 46px 80px rgb(0 0 0 / 7%);
 }
-
 
 /* CSS based on classes */
 
@@ -415,8 +415,6 @@ ul {
   z-index: 20;
 }
 
-
-
 .logo {
   border: 3px solid var(--prussian-blue);
   height: auto;
@@ -429,8 +427,6 @@ ul {
   grid-column: 1 / -1;
   grid-row: 1;
 }
-
-
 
 .margin-bottom {
   margin-bottom: 4em;
@@ -601,15 +597,52 @@ ul {
 }
 
 .pause {
-  max-width: 256px;
-  max-height: 256px;
+  max-width: 50px;
+  max-height: 50px;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48cGF0aCBkPSJNMTEgMjRIM1YwaDhabS01LTNoMlYzSDZaTTIxIDI0aC04VjBoOFptLTUtM2gyVjNoLTJaIiBmaWxsPSIjZjc3ZjAwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBvcGFjaXR5PSIxIj48L3BhdGg+PC9nPjwvc3ZnPg==)
 }
 
 .play {
-  max-width: 256px;
-  max-height: 256px;
+  max-width: 50px;
+  max-height: 50px;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48cGF0aCBkPSJNNSAyMy43NlYuMjc5bDE0LjAyOSA4Ljk1NmEzLjI3NSAzLjI3NSAwIDAgMS0uMDA4IDUuNTM5Wk04IDUuNzU0djEyLjUxOWw5LjQxMi02LjAzMmEuMjY0LjI2NCAwIDAgMCAuMTQtLjIzOS4yNTcuMjU3IDAgMCAwLS4xMjktLjIzMloiIGZpbGw9IiNmNzdmMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIG9wYWNpdHk9IjEiPjwvcGF0aD48L2c+PC9zdmc+)
+}
+
+.play-pause1 {
+  padding: 1.5em 3em;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  background: center/ 40% no-repeat url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48cGF0aCBkPSJNMTEgMjRIM1YwaDhabS01LTNoMlYzSDZaTTIxIDI0aC04VjBoOFptLTUtM2gyVjNoLTJaIiBmaWxsPSIjZjc3ZjAwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBvcGFjaXR5PSIxIj48L3BhdGg+PC9nPjwvc3ZnPg==);
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px #646464,
+    -3px -3px 6px #a3a3a3;
+  position: absolute;
+  bottom: 6%;
+  right: 2%;
+  z-index: 100;
+  border: 1px solid var(--orange);
+  transition: all 250ms ease;
+}
+
+.play-pause2 {
+  padding: 1.5em 3em;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  background: center/ 40% no-repeat url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48cGF0aCBkPSJNNSAyMy43NlYuMjc5bDE0LjAyOSA4Ljk1NmEzLjI3NSAzLjI3NSAwIDAgMS0uMDA4IDUuNTM5Wk04IDUuNzU0djEyLjUxOWw5LjQxMi02LjAzMmEuMjY0LjI2NCAwIDAgMCAuMTQtLjIzOS4yNTcuMjU3IDAgMCAwLS4xMjktLjIzMloiIGZpbGw9IiNmNzdmMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIG9wYWNpdHk9IjEiPjwvcGF0aD48L2c+PC9zdmc+);
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px #646464,
+    -3px -3px 6px #a3a3a3;
+  position: absolute;
+  bottom: 6%;
+  right: 2%;
+  z-index: 100;
+  border: 1px solid var(--orange);
+  transition: all 250ms ease;
+}
+
+.play-pause1:hover,
+.play-pause2:hover {
+  border: 1px solid white;
+  transition: all 250ms ease;
+  transform: scale(1.10)
 }
 
 .product-container {
@@ -722,6 +755,10 @@ ul {
   top: -20px;
   width: 99vw;
   z-index: -1;
+}
+
+.video-container {
+  position: relative;
 }
 
 /* CSS based on media queries */
