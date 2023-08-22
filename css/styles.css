@@ -417,15 +417,17 @@ ul {
 
 .logo {
   border: 3px solid var(--prussian-blue);
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1;
   height: auto;
   margin-left: 1.5em;
-  width: 14.5vw;
+  opacity: 1;
   min-width: 150px;
   margin: 2rem 0 0 3rem;
   position: relative;
+  width: 14.5vw;
   z-index: 19;
-  grid-column: 1 / -1;
-  grid-row: 1;
 }
 
 .margin-bottom {
@@ -840,13 +842,20 @@ ul {
     margin: 0em;
   }
 
-  .logo {
-    display: none;
-    transition: all 1000ms ease-in;
-  }
-
   .section {
     margin: 0em;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    transition: opacity 200ms, display 200ms;
+    display: none;
+    opacity: 0;
+  }
+
+  #play-pause {
+    display: none;
   }
 }
 
