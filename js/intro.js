@@ -23,6 +23,7 @@ function assignButtonToggle() {
       }
   }
   playButton.addEventListener('click', togglePlay)
+  playButton.addEventListener('touchend', togglePlay)
 }
 // adds functionality for the introduction
     const lineObject = document.getElementsByClassName('line');
