@@ -1,3 +1,4 @@
+// creates the mouse icon that is rather large and that inverts the colors
 (() => {
     console.log('inverted firing')
     const mouseHouse = document.getElementById('mouseHouse');
