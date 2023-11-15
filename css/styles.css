@@ -695,6 +695,20 @@ ul {
   justify-content: center;
 }
 
+.scroll {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  top: -150px;
+}
+
+.scroll>img {
+  width: 50px;
+  height: auto;
+  filter: brightness(0.70);
+}
+
 .section {
   display: contents;
   height: min-content;

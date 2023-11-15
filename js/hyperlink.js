@@ -3,6 +3,7 @@
   const mission = document.getElementById('nav-link-mission');
   const products = document.getElementById('nav-link-products');
   const contact = document.getElementById('nav-link-contacts');
+  const scroll = document.getElementById('scroll-icon')
 
   // Event listeners
 
@@ -62,6 +63,11 @@
   contact.addEventListener('click', () => {
     if (isTouchEventProcessed) return;
     window.scroll(0, 6000);
+  });
+
+  scroll.addEventListener('click', () => {
+    if (isTouchEventProcessed) return;
+    window.scroll(0, 1150);
   });
 
 
