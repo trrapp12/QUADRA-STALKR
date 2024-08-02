@@ -9,7 +9,7 @@ https://user-images.githubusercontent.com/11747875/171573424-95a2743b-8939-4103-
 
 <br>
 
-[![Button60](https://user-images.githubusercontent.com/11747875/144651679-dc423f76-a98a-456d-8ca2-d913f0b7df12.png)](https://trrapp12.github.io/Product-Page/)
+[![Button60](https://user-images.githubusercontent.com/11747875/144651679-dc423f76-a98a-456d-8ca2-d913f0b7df12.png)](https://trrapp12.github.io/QUADRA-STALKR/)
 
 <br>
 <br>
@@ -40,7 +40,7 @@ https://user-images.githubusercontent.com/11747875/171573424-95a2743b-8939-4103-
 
 ### QUICKSTART GUIDE: 
 
-To use the app simply click on the ```View Project``` button or visit <a href="https://trrapp12.github.io/Product-Page/">https://trrapp12.github.io/Product-Page/</a>. 
+To use the app simply click on the ```View Project``` button or visit <a href="https://trrapp12.github.io/QUADRA-STALKR/">https://trrapp12.github.io/Product-Page/</a>. 
 
 ---
 
