@@ -40,7 +40,7 @@ https://user-images.githubusercontent.com/11747875/171573424-95a2743b-8939-4103-
 
 ### QUICKSTART GUIDE: 
 
-To use the app simply click on the ```View Project``` button or visit <a href="https://trrapp12.github.io/QUADRA-STALKR/">https://trrapp12.github.io/Product-Page/</a>. 
+To use the app simply click on the ```View Project``` button or visit <a href="https://trrapp12.github.io/QUADRA-STALKR/">https://trrapp12.github.io/QUADRA-STALKR/</a>. 
 
 ---
 
@@ -245,6 +245,8 @@ So while I was using this I needed to create an eventlistener that would change 
 ### ATTRIBUTIONS
 
 <a href="https://www.flaticon.com/free-icons/alien" title="alien icons" class="alien-icons">Alien icons created by Freepik - Flaticon</a>
+
+Photos and other asset credits: 
 
 * Callum Hilton
 * Dids
